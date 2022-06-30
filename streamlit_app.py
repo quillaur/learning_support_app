@@ -3,6 +3,11 @@ import streamlit as st
 from os import walk
 
 
+# How many supports ?
+if not "support_number" in st.session_state:
+    for root, dirs, files in walk("supports"):
+        st.session_state["support_number"] = len(files)
+
 title_holder = st.empty()
 main_holder = st.empty()
 
@@ -20,10 +25,6 @@ if "firstname" not in st.session_state:
 
 if "firstname" in st.session_state and st.session_state["firstname"]:    
     main_holder.empty()
-
-    support_number = 0
-    for root, dirs, files in walk("supports"):
-        support_number = len(files)
 
     if "support" not in st.session_state:
         st.session_state["support"] = 1
@@ -49,7 +50,7 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
                 st.experimental_rerun()
 
     with col2:
-        if st.session_state["support"] < support_number:
+        if st.session_state["support"] < st.session_state["support_number"]:
             next = st.button("Next")
 
             if next:
