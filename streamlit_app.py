@@ -35,8 +35,18 @@ if "support_number" in st.session_state:
         st.session_state["content"] = json.load(json_file)
         st.session_state["support_count"] = len(st.session_state["content"])
 
+    ##############
+    # Side Panel #
+    ##############
+    st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
+    st.sidebar.write(f"lastname : {st.session_state['lastname']}")
+    st.sidebar.write(f"Class : {st.session_state['class']}")
+    st.sidebar.write(f"Selected study : {st.session_state['selected_study']}")
 
-if "firstname" in st.session_state and st.session_state["firstname"]:    
+    #############
+    # Main Page #
+    #############
+
     main_holder.empty()
     
     this_page = st.session_state["content"][st.session_state["support_number"]]
@@ -49,7 +59,7 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
     
     elif this_page["text"]:
         main_holder.write(this_page["text"])
-        
+
     elif this_page["image"]:
         img = None
         main_holder.image(img)
