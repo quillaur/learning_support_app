@@ -1,45 +1,55 @@
 import json
 import streamlit as st
-
-
-# How many supports ?
-if not "support_number" in st.session_state:
-    with open("supports\content.json", "r") as json_file:
-        st.session_state["content"] = json.load(json_file)
-        st.session_state["support_count"] = len(st.session_state["content"])
+import os
 
 title_holder = st.empty()
 main_holder = st.empty()
 
+# What classes are available ?
+available_classes = os.listdir("classes/")
+print(available_classes)
+
+##########################
+# Student identification #
+##########################
 if "firstname" not in st.session_state:
     with main_holder.form("Identification"):
         firstname = st.text_input("Firstname:")
         lastname = st.text_input("Lastname:")
-        classe = st.text_input("Your class:")
+        your_class = st.text_input("Your class:")
+        selected_study = st.selectbox("Please select what you would like to study:", available_classes)
 
         submitted = st.form_submit_button("Submit")
         if submitted:
             st.session_state["firstname"] = firstname
             st.session_state["lastname"] = lastname
-            st.session_state["class"] = classe
+            st.session_state["class"] = your_class
+            st.session_state["selected_study"] = selected_study
+            st.session_state["support_number"] = 0
+
+
+# How many supports ?
+if "support_number" in st.session_state:
+    study_path = os.path.join("classes", st.session_state["selected_study"], "content.json")
+    with open(study_path, "r") as json_file:
+        st.session_state["content"] = json.load(json_file)
+        st.session_state["support_count"] = len(st.session_state["content"])
+
 
 if "firstname" in st.session_state and st.session_state["firstname"]:    
     main_holder.empty()
-
-    if "support_number" not in st.session_state:
-        st.session_state["support_number"] = 0
     
-    support = st.session_state["content"][st.session_state["support_number"]]
+    this_page = st.session_state["content"][st.session_state["support_number"]]
 
-    title_holder.title(support["title"])
+    title_holder.title(this_page["title"])
 
-    if support["link"]:
-        main_holder.video(support["link"])
+    if this_page["link"]:
+        main_holder.video(this_page["link"])
     
-    elif support["text"]:
-        main_holder.write(support["text"])
+    elif this_page["text"]:
+        main_holder.write(this_page["text"])
 
-    col1, col2 = st.columns(2)
+    col1, col2 = st.columns([10,1])
     with col1:
         if st.session_state["support_number"] > 0:
             prev = st.button("Previous")
@@ -47,6 +57,8 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
             if prev:
                 st.session_state["support_number"] -= 1
                 st.experimental_rerun()
+        else:
+            st.button("Previous", disabled=True)
 
     with col2:
         if st.session_state["support_number"] < st.session_state["support_count"]-1:
@@ -55,3 +67,5 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
             if next:
                 st.session_state["support_number"] += 1
                 st.experimental_rerun()
+        else:
+            st.button("Next", disabled=True)
