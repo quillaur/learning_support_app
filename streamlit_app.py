@@ -43,11 +43,16 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
 
     title_holder.title(this_page["title"])
 
+    # 3 possible types of supports:
     if this_page["link"]:
         main_holder.video(this_page["link"])
     
     elif this_page["text"]:
         main_holder.write(this_page["text"])
+        
+    elif this_page["image"]:
+        img = None
+        main_holder.image(img)
 
     col1, col2 = st.columns([10,1])
     with col1:
