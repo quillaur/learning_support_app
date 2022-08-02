@@ -1,12 +1,12 @@
 import json
 import streamlit as st
-from os import walk
 
 
 # How many supports ?
 if not "support_number" in st.session_state:
-    for root, dirs, files in walk("supports"):
-        st.session_state["support_number"] = len(files)
+    with open("supports\content.json", "r") as json_file:
+        st.session_state["content"] = json.load(json_file)
+        st.session_state["support_count"] = len(st.session_state["content"])
 
 title_holder = st.empty()
 main_holder = st.empty()
@@ -26,11 +26,10 @@ if "firstname" not in st.session_state:
 if "firstname" in st.session_state and st.session_state["firstname"]:    
     main_holder.empty()
 
-    if "support" not in st.session_state:
-        st.session_state["support"] = 1
+    if "support_number" not in st.session_state:
+        st.session_state["support_number"] = 0
     
-    with open(f"supports/page_{st.session_state['support']}.json", "r") as json_file:
-        support = json.load(json_file)
+    support = st.session_state["content"][st.session_state["support_number"]]
 
     title_holder.title(support["title"])
 
@@ -42,17 +41,17 @@ if "firstname" in st.session_state and st.session_state["firstname"]:
 
     col1, col2 = st.columns(2)
     with col1:
-        if st.session_state["support"] > 1:
+        if st.session_state["support_number"] > 0:
             prev = st.button("Previous")
 
             if prev:
-                st.session_state["support"] -= 1
+                st.session_state["support_number"] -= 1
                 st.experimental_rerun()
 
     with col2:
-        if st.session_state["support"] < st.session_state["support_number"]:
+        if st.session_state["support_number"] < st.session_state["support_count"]-1:
             next = st.button("Next")
 
             if next:
-                st.session_state["support"] += 1
+                st.session_state["support_number"] += 1
                 st.experimental_rerun()
