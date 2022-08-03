@@ -6,9 +6,15 @@
 		"image":""
 	},
 	{
-		"title": "Introduction",
+		"title": "Suite",
 		"link": "",
 		"text": "Well done !",
 		"image":""
+	},
+	{
+		"title": "Une image",
+		"link": "",
+		"text": "",
+		"image":"classes\\python_basics\\py_code_insight_highlight.png"
 	}
 ]

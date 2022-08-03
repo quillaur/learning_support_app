@@ -1,13 +1,13 @@
 import json
 import streamlit as st
 import os
+from PIL import Image
 
 title_holder = st.empty()
 main_holder = st.empty()
 
 # What classes are available ?
 available_classes = os.listdir("classes/")
-print(available_classes)
 
 ##########################
 # Student identification #
@@ -61,8 +61,8 @@ if "support_number" in st.session_state:
         main_holder.write(this_page["text"])
 
     elif this_page["image"]:
-        img = None
-        main_holder.image(img)
+        img_path = os.path.abspath(this_page["image"])
+        main_holder.image(Image.open(img_path))
 
     col1, col2 = st.columns([10,1])
     with col1:
