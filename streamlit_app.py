@@ -63,6 +63,23 @@ if "support_number" in st.session_state:
     elif this_page["image"]:
         img_path = os.path.abspath(this_page["image"])
         main_holder.image(Image.open(img_path))
+    
+    # Is there a question to ask ?
+    if this_page["question"]:
+        main_holder.write(this_page["question"])
+
+        col1, col2 = st.columns(2)
+        with col1:
+            resp = st.button(this_page["r1"])
+            resp = st.button(this_page["r3"])
+        with col2:
+            resp = st.button(this_page["r2"])
+            resp = st.button(this_page["r4"])
+        
+        if resp and resp == this_page["r"]:
+            st.success("Godd job ! This is correct.")
+        elif resp:
+            st.error(f"Sorry... The answer was: {this_page['r']}")
 
     col1, col2 = st.columns([10,1])
     with col1:
