@@ -1,27 +1,30 @@
 import json
 import streamlit as st
-import os
-from PIL import Image
+from os.path import join
+from os import listdir
 
+from view.main_panel import set_main_view
 from view.side_panel import set_side_panel_view
 from view.student_identification import set_identification_form
 
+# To change content from one page to another, 
+# I need to initialize empty containers and clear / fill them as needed.
 title_holder = st.empty()
 main_holder = st.empty()
 
 # What classes are available ?
-available_classes = os.listdir("classes/")
+available_classes = listdir("classes/")
 
 ##########################
 # Student identification #
 ##########################
 if "firstname" not in st.session_state:
-    set_identification_form(main_holder, available_classes)
+    set_identification_form(title_holder, main_holder, available_classes)
 
 
 # How many supports ?
 if "support_number" in st.session_state:
-    study_path = os.path.join("classes", st.session_state["selected_study"], "content.json")
+    study_path = join("classes", st.session_state["selected_study"], "content.json")
     with open(study_path, "r") as json_file:
         st.session_state["content"] = json.load(json_file)
         st.session_state["support_count"] = len(st.session_state["content"])
@@ -34,56 +37,4 @@ if "support_number" in st.session_state:
     #############
     # Main Page #
     #############
-
-    main_holder.empty()
-    
-    this_page = st.session_state["content"][st.session_state["support_number"]]
-
-    title_holder.title(this_page["title"])
-
-    # 3 possible types of supports:
-    if this_page["link"]:
-        main_holder.video(this_page["link"])
-    
-    elif this_page["text"]:
-        main_holder.write(this_page["text"])
-
-    elif this_page["image"]:
-        img_path = os.path.abspath(this_page["image"])
-        main_holder.image(Image.open(img_path))
-    
-    # Is there a question to ask ?
-    if this_page["question"]:
-        main_holder.write(this_page["question"])
-
-        with st.form("Answers"):
-            resp = st.selectbox("Your answer:", options=this_page["possible answers"])
-
-            submit = st.form_submit_button()
-            if submit:
-                if resp == this_page["answer"]:
-                    st.success("Godd job ! This is correct.")
-                else:
-                    st.error(f"Sorry... The answer was: {this_page['answer']}")
-            
-
-    col1, col2 = st.sidebar.columns(2)
-    with col1:
-        if st.session_state["support_number"] > 0:
-            prev = st.button("Previous")
-
-            if prev:
-                st.session_state["support_number"] -= 1
-                st.experimental_rerun()
-        else:
-            st.button("Previous", disabled=True)
-
-    with col2:
-        if st.session_state["support_number"] < st.session_state["support_count"]-1:
-            next = st.button("Next")
-
-            if next:
-                st.session_state["support_number"] += 1
-                st.experimental_rerun()
-        else:
-            st.button("Next", disabled=True)
+    set_main_view(title_holder, main_holder)
