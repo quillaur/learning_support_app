@@ -68,36 +68,35 @@ if "support_number" in st.session_state:
     if this_page["question"]:
         main_holder.write(this_page["question"])
 
-        col1, col2 = st.columns(2)
+        with st.form("Answers"):
+            resp = st.selectbox("Your answer:", options=this_page["possible answers"])
+
+            submit = st.form_submit_button()
+            if submit:
+                if resp == this_page["answer"]:
+                    st.success("Godd job ! This is correct.")
+                else:
+                    st.error(f"Sorry... The answer was: {this_page['answer']}")
+            
+
+    if not this_page["question"] or (this_page["question"] and submit):
+        col1, col2 = st.columns([10,1])
         with col1:
-            resp = st.button(this_page["r1"])
-            resp = st.button(this_page["r3"])
+            if st.session_state["support_number"] > 0:
+                prev = st.button("Previous")
+
+                if prev:
+                    st.session_state["support_number"] -= 1
+                    st.experimental_rerun()
+            else:
+                st.button("Previous", disabled=True)
+
         with col2:
-            resp = st.button(this_page["r2"])
-            resp = st.button(this_page["r4"])
-        
-        if resp and resp == this_page["r"]:
-            st.success("Godd job ! This is correct.")
-        elif resp:
-            st.error(f"Sorry... The answer was: {this_page['r']}")
+            if st.session_state["support_number"] < st.session_state["support_count"]-1:
+                next = st.button("Next")
 
-    col1, col2 = st.columns([10,1])
-    with col1:
-        if st.session_state["support_number"] > 0:
-            prev = st.button("Previous")
-
-            if prev:
-                st.session_state["support_number"] -= 1
-                st.experimental_rerun()
-        else:
-            st.button("Previous", disabled=True)
-
-    with col2:
-        if st.session_state["support_number"] < st.session_state["support_count"]-1:
-            next = st.button("Next")
-
-            if next:
-                st.session_state["support_number"] += 1
-                st.experimental_rerun()
-        else:
-            st.button("Next", disabled=True)
+                if next:
+                    st.session_state["support_number"] += 1
+                    st.experimental_rerun()
+            else:
+                st.button("Next", disabled=True)

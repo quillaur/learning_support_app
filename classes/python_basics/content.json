@@ -19,11 +19,8 @@
 		"text": "Well done !",
 		"image":"",
 		"question": "What is your name ?",
-		"r1": "aurélien",
-		"r2": "ludo",
-		"r3": "albert",
-		"r4": "pierre",
-		"r": "aurélien"
+		"possible answers": ["aurélien", "ludo", "albert", "pierre"],
+		"answer": "aurélien"
 	},
 	{
 		"title": "Une image",
