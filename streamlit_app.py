@@ -42,6 +42,7 @@ if "support_number" in st.session_state:
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
     st.sidebar.write(f"Selected study : {st.session_state['selected_study']}")
+    st.sidebar.write(f"Page: {st.session_state['support_number']}")
 
     #############
     # Main Page #
@@ -79,24 +80,23 @@ if "support_number" in st.session_state:
                     st.error(f"Sorry... The answer was: {this_page['answer']}")
             
 
-    if not this_page["question"] or (this_page["question"] and submit):
-        col1, col2 = st.columns([10,1])
-        with col1:
-            if st.session_state["support_number"] > 0:
-                prev = st.button("Previous")
+    col1, col2 = st.sidebar.columns(2)
+    with col1:
+        if st.session_state["support_number"] > 0:
+            prev = st.button("Previous")
 
-                if prev:
-                    st.session_state["support_number"] -= 1
-                    st.experimental_rerun()
-            else:
-                st.button("Previous", disabled=True)
+            if prev:
+                st.session_state["support_number"] -= 1
+                st.experimental_rerun()
+        else:
+            st.button("Previous", disabled=True)
 
-        with col2:
-            if st.session_state["support_number"] < st.session_state["support_count"]-1:
-                next = st.button("Next")
+    with col2:
+        if st.session_state["support_number"] < st.session_state["support_count"]-1:
+            next = st.button("Next")
 
-                if next:
-                    st.session_state["support_number"] += 1
-                    st.experimental_rerun()
-            else:
-                st.button("Next", disabled=True)
+            if next:
+                st.session_state["support_number"] += 1
+                st.experimental_rerun()
+        else:
+            st.button("Next", disabled=True)
