@@ -1,24 +1,25 @@
 import streamlit as st
-from os import listdir
 from control.content import load_study_content
 from view.main_panel import set_main_view
 from view.side_panel import set_side_panel_view
 from view.student_identification import set_identification_form
+from view.study_selection import select_study_view
 
 # To change content from one page to another, 
 # I need to initialize empty containers and clear / fill them as needed.
-title_holder = st.empty()
 main_holder = st.empty()
-
-# What classes are available ?
-available_classes = listdir("classes/")
 
 ##########################
 # Student identification #
 ##########################
 if "firstname" not in st.session_state:
-    set_identification_form(title_holder, main_holder, available_classes)
+    set_identification_form(main_holder)
 
+if "firstname" in st.session_state:
+    ########################
+    # Study selection page #
+    ########################
+    select_study_view(main_holder)
 
 # How many supports ?
 if "support_number" in st.session_state:
@@ -32,4 +33,4 @@ if "support_number" in st.session_state:
     #############
     # Main Page #
     #############
-    set_main_view(title_holder, main_holder)
+    set_main_view(main_holder)

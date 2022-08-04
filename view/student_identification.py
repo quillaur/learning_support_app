@@ -1,8 +1,11 @@
 import streamlit as st
 
-def set_identification_form(title_holder: st.empty, main_holder: st.empty, available_classes: list) -> None:
-    title_holder.title("Identification form")
-    with main_holder.form("Identification"):
+
+def set_identification_form(main_holder: st.empty) -> None:
+
+    with main_holder.form("ID form"):
+        st.title("Identification form")
+        
         col1, col2, col3 = st.columns(3)
         with col1:
             firstname  = st.text_input("Firstname:")
@@ -10,13 +13,15 @@ def set_identification_form(title_holder: st.empty, main_holder: st.empty, avail
             lastname = st.text_input("Lastname:")
         with col3:
             your_class = st.text_input("Your class:")
-        
-        selected_study = st.selectbox("Please select what you would like to study:", available_classes)
 
-        submitted = st.form_submit_button("Submit")
-        if submitted:
+        if st.form_submit_button():
             st.session_state["firstname"] = firstname
             st.session_state["lastname"] = lastname
             st.session_state["class"] = your_class
-            st.session_state["selected_study"] = selected_study
-            st.session_state["support_number"] = 0
+
+            # For strange reasons, 
+            # if I don't do a rerun after empty, 
+            # not all elements are deleted...
+            main_holder.empty()
+            st.experimental_rerun()
+   
