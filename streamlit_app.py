@@ -3,6 +3,9 @@ import streamlit as st
 import os
 from PIL import Image
 
+from view.side_panel import set_side_panel_view
+from view.student_identification import set_identification_form
+
 title_holder = st.empty()
 main_holder = st.empty()
 
@@ -13,19 +16,7 @@ available_classes = os.listdir("classes/")
 # Student identification #
 ##########################
 if "firstname" not in st.session_state:
-    with main_holder.form("Identification"):
-        firstname = st.text_input("Firstname:")
-        lastname = st.text_input("Lastname:")
-        your_class = st.text_input("Your class:")
-        selected_study = st.selectbox("Please select what you would like to study:", available_classes)
-
-        submitted = st.form_submit_button("Submit")
-        if submitted:
-            st.session_state["firstname"] = firstname
-            st.session_state["lastname"] = lastname
-            st.session_state["class"] = your_class
-            st.session_state["selected_study"] = selected_study
-            st.session_state["support_number"] = 0
+    set_identification_form(main_holder, available_classes)
 
 
 # How many supports ?
@@ -38,11 +29,7 @@ if "support_number" in st.session_state:
     ##############
     # Side Panel #
     ##############
-    st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
-    st.sidebar.write(f"lastname : {st.session_state['lastname']}")
-    st.sidebar.write(f"Class : {st.session_state['class']}")
-    st.sidebar.write(f"Selected study : {st.session_state['selected_study']}")
-    st.sidebar.write(f"Page: {st.session_state['support_number']}")
+    set_side_panel_view()
 
     #############
     # Main Page #
