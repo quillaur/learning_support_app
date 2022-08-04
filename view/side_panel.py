@@ -26,7 +26,8 @@ def set_side_panel_view() -> None:
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
     st.sidebar.write(f"Study : {st.session_state['selected_study']}")
-    st.sidebar.write(f"Page: {st.session_state['support_number']}")
+    st.sidebar.write(f"Page: {st.session_state['support_number']+1} / {st.session_state['support_count']}")
+    st.sidebar.write(f"Good answers: {st.session_state['good_answers']} / {st.session_state['total_answers']}")
 
     col1, col2 = st.sidebar.columns(2)
     with col1:

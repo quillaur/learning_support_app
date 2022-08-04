@@ -22,9 +22,10 @@ if "firstname" in st.session_state and "support_number" not in st.session_state:
     select_study_view(main_holder)
 
 # How many supports ?
-if "support_number" in st.session_state:
+if "support_number" in st.session_state and "content" not in st.session_state:
     load_study_content()
 
+if "content" in st.session_state:
     ##############
     # Side Panel #
     ##############

@@ -1,26 +1,26 @@
 [
 	{
 		"title": "Introduction",
-		"link": "https://www.youtube.com/watch?v=qCR2Weh64h4&list=PLzMcBGfZo4-lUA8uGjeXhBUUzPYc6vZRn",
+		"link": "",
+		"text": "Let's learn the basics of python !",
+		"image":"",
+		"question": ""
+	},
+	{
+		"title": "Les variables",
+		"link": "https://www.youtube.com/watch?v=OFrLs22MDAw&list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm&index=1",
 		"text": "",
 		"image":"",
 		"question": ""
 	},
 	{
-		"title": "Suite",
+		"title": "Les variables",
 		"link": "",
-		"text": "Well done !",
+		"text": "a = '50'",
 		"image":"",
-		"question": ""
-	},
-	{
-		"title": "Suite",
-		"link": "",
-		"text": "Well done !",
-		"image":"",
-		"question": "What is your name ?",
-		"possible answers": ["aurélien", "ludo", "albert", "pierre"],
-		"answer": "aurélien"
+		"question": "Quel est le type de cette variable ?",
+		"possible answers": ["str", "int", "list", "float"],
+		"answer": "str"
 	},
 	{
 		"title": "Une image",

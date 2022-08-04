@@ -23,5 +23,6 @@ def select_study_view(main_holder: st.empty):
         st.session_state["study_path"] = join("classes", selected_category, selected_study)
         st.session_state["support_number"] = 0
 
+        main_holder.empty()
 
     
