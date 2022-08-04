@@ -1,5 +1,5 @@
 import streamlit as st
-from os.path import abspath
+from os.path import join
 from PIL import Image
 
 
@@ -18,7 +18,7 @@ def set_main_view(title_holder: st.empty, main_holder: st.empty) -> None:
         main_holder.write(this_page["text"])
 
     elif this_page["image"]:
-        img_path = abspath(this_page["image"])
+        img_path = join("classes", st.session_state["selected_study"], this_page["image"])
         main_holder.image(Image.open(img_path))
     
     # Is there a question to ask ?
