@@ -6,7 +6,7 @@ from PIL import Image
 def set_main_view(main_holder: st.empty) -> None:
     
     this_page = st.session_state["content"][st.session_state["support_number"]]
-
+    main_holder.empty()
     with main_holder.container():
 
         for k, v in this_page.items():
@@ -19,11 +19,11 @@ def set_main_view(main_holder: st.empty) -> None:
                     print(v)
                     st.video(v)
 
-                elif k == "image":
+                elif "image" in k:
                     img_path = join(st.session_state["study_path"], v)
                     st.image(Image.open(img_path))
                 
-                elif k == "text":
+                elif "text" in k:
                     st.info(v)
 
                 # Is there a question to ask ?
@@ -33,10 +33,7 @@ def set_main_view(main_holder: st.empty) -> None:
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
                         st.warning(f"This answer was: {this_page['answer']}")
                     else:
-                        if "multiselect" in this_page and this_page["multiselect"]:
-                            resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=this_page["possible answers"])
-                        else:
-                            resp = st.selectbox("Your answer:", options=this_page["possible answers"])
+                        resp = st.multiselect("Your answer:", options=this_page["possible answers"])
 
                         submit = st.button("Submit")
                     
