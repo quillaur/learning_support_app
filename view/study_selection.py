@@ -12,21 +12,13 @@ def select_study_view(main_holder: st.empty):
         # What studies are available ?
         col1, col2 = st.columns(2)
         with col1:
-            selected_language = st.selectbox("Language:", ["English", "Français"])
+            selected_language = st.selectbox("Language:", listdir("classes/"))
+            language_path = join("classes", selected_language)
         with col2:
-            selected_category = st.selectbox("Category:", listdir("classes/"))
-            category_path = join("classes", selected_category)
+            selected_category = st.selectbox("Category:", listdir(language_path))
+            category_path = join(language_path, selected_category)
 
-        filtered_studies = []
-        for s in listdir(category_path):
-            config_path = join(category_path, s, "config.json")
-            with open(config_path, "r") as json_file:
-                json_content = json.load(json_file)
-            
-            if json_content["language"] == selected_language:
-                filtered_studies.append(s)
-
-        selected_study = st.selectbox("Please select what you would like to study:", filtered_studies)
+        selected_study = st.selectbox("Please select what you would like to study:", listdir(category_path))
         
         select = st.button("Select")
     
