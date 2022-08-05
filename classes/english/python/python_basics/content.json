@@ -107,6 +107,74 @@
 	},
 	{
 		"id": "s3",
+		"title": "Conditional statements",
+		"video_url": "https://www.youtube.com/watch?v=f4KOjWS_KZs",
+		"text": "Note: it is now preferable to use input() instead of raw_input() in python 3.",
+		"image":"",
+		"question": ""
+	},
+	{
+		"id": "q10",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "Which method can you use to get a user input ?",
+		"possible answers": ["print", "get", "input", "read"],
+		"answer": "input"
+	},
+	{
+		"id": "q11",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "What is the type of variable returned by the input method ?",
+		"possible answers": ["str", "int", "auto", "float"],
+		"answer": "str"
+	},
+	{
+		"id": "q12",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "Which operator do you use to test if x is any number other than 6 ?",
+		"possible answers": ["==", "=", "<>", "!="],
+		"answer": "!="
+	},
+	{
+		"id": "q13",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "What is the keyword to tell python 'Else if' ?",
+		"possible answers": ["else if", "elif", "elseif", "if"],
+		"answer": "elif"
+	},
+	{
+		"id": "q14",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "What is the keyword to tell python 'Else if' ?",
+		"possible answers": ["else if", "elif", "elseif", "if"],
+		"answer": "elif"
+	},
+	{
+		"id": "q15",
+		"title": "Conditional statements",
+		"video_url": "",
+		"text": "",
+		"image":"q15.png",
+		"question": "This code outputs 'I can go !'.",
+		"possible answers": ["True", "False", "Maybe", "We cannot know"],
+		"answer": "False"
+	},
+	{
+		"id": "s3",
 		"title": "Certification",
 		"video_url": "",
 		"text": "",
