@@ -1,6 +1,7 @@
 import streamlit as st
 from os.path import join
 from PIL import Image
+from zipfile import ZipFile
 
 
 def set_main_view(main_holder: st.empty) -> None:
@@ -16,12 +17,14 @@ def set_main_view(main_holder: st.empty) -> None:
 
                 # 3 possible types of supports:        
                 elif k == "video_url":
-                    print(v)
                     st.video(v)
 
                 elif "image" in k:
-                    img_path = join(st.session_state["study_path"], v)
-                    st.image(Image.open(img_path))
+                    resc_path = join(st.session_state["study_path"], "ressources.zip")
+                    with ZipFile(resc_path, "r") as myzip:
+                        with myzip.open(f"ressources/{v}") as img_file:
+                            img = Image.open(img_file)
+                            st.image(img)
                 
                 elif "text" in k:
                     st.info(v)
