@@ -30,7 +30,8 @@ def set_side_panel_view() -> None:
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
     
-    st.sidebar.write("Study progress:")
+    progress = (st.session_state['support_number']+1) / st.session_state['support_count']
+    st.sidebar.write(f"Study progress: {progress*100} %")
     # For a nicer color for the progress bar:
     # https://discuss.streamlit.io/t/changing-each-progress-bar-to-different-colors/18827/3
     st.markdown(
@@ -41,7 +42,7 @@ def set_side_panel_view() -> None:
         }
     </style>""",
     unsafe_allow_html=True)
-    st.sidebar.progress((st.session_state['support_number']+1) / st.session_state['support_count'])
+    st.sidebar.progress(progress)
 
     if st.session_state['delta'] == 0:
         st.sidebar.metric("Your score:", value=f"{st.session_state['score']} pts")
