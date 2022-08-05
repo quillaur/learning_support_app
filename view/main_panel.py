@@ -48,5 +48,17 @@ def set_main_view(main_holder: st.empty) -> None:
                         else:
                             st.session_state["delta"] = -1
                     
+                    st.session_state["max_score"] += 1
                     st.session_state["pages_done"][st.session_state["support_number"]] = True
+        
+        if "certif_ratio" in this_page and this_page["certif_ratio"]:
+            st.header(f"Your final score: {st.session_state['score']} / {st.session_state['max_score']}")
+
+            score_ratio = (st.session_state["score"] / st.session_state["max_score"]) * 100
+
+            if score_ratio > this_page["certif_ratio"]:
+                st.success("Well done! You can get this study certification !")
+            else:
+                st.error("Sorry, you did not score high enough to get this certification.")
+                st.info("Feel free to retry anytime !")
                 

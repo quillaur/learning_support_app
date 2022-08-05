@@ -30,8 +30,8 @@ def set_side_panel_view() -> None:
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
     
-    progress = (st.session_state['support_number']+1) / st.session_state['support_count']
-    st.sidebar.write(f"Study progress: {progress*100} %")
+    progress = ceil((st.session_state['support_number']+1) / st.session_state['support_count']*100)
+    st.sidebar.write(f"Study progress: {progress} %")
     # For a nicer color for the progress bar:
     # https://discuss.streamlit.io/t/changing-each-progress-bar-to-different-colors/18827/3
     st.markdown(

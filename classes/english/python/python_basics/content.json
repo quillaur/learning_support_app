@@ -1,5 +1,6 @@
 [
 	{
+		"id": "s1",
 		"title": "Introduction",
 		"video_url": "",
 		"text": "Let's learn the basics of python !",
@@ -7,6 +8,7 @@
 		"question": ""
 	},
 	{
+		"id": "s2",
 		"title": "Variables",
 		"video_url": "https://www.youtube.com/watch?v=OFrLs22MDAw&list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm&index=1",
 		"text": "",
@@ -14,6 +16,7 @@
 		"question": ""
 	},
 	{
+		"id": "q1",
 		"title": "Variables",
 		"video_url": "",
 		"text": "a = '50'",
@@ -23,6 +26,7 @@
 		"answer": "str"
 	},
 	{
+		"id": "q2",
 		"title": "Variables",
 		"video_url": "",
 		"text": "a = 50",
@@ -32,6 +36,7 @@
 		"answer": "int"
 	},
 	{
+		"id": "q3",
 		"title": "Variables",
 		"video_url": "",
 		"text": "a = 50.0",
@@ -41,6 +46,7 @@
 		"answer": "float"
 	},
 	{
+		"id": "q4",
 		"title": "Show a message",
 		"video_url": "",
 		"text": "",
@@ -50,6 +56,7 @@
 		"answer": "print"
 	},
 	{
+		"id": "q5",
 		"title": "Operations",
 		"video_url": "",
 		"text": "",
@@ -59,10 +66,52 @@
 		"answer": "lutSa"
 	},
 	{
-		"title": "Une image",
+		"id": "q6",
+		"title": "Operations",
 		"video_url": "",
 		"text": "",
-		"image":"py_code_insight_highlight.png",
-		"question": ""
+		"image":"q6.png",
+		"question": "What is this code output ?",
+		"possible answers": ["12*4", "48", "48.0", "Error"],
+		"answer": "12*4"
+	},
+	{
+		"id": "q7",
+		"title": "Operations",
+		"video_url": "",
+		"text": "",
+		"image":"q7.png",
+		"question": "What is this code output ?",
+		"possible answers": ["5", "32", "3+2", "Error"],
+		"answer": "Error"
+	},
+	{
+		"id": "q8",
+		"title": "Operations",
+		"video_url": "",
+		"text": "",
+		"image":"q8.png",
+		"question": "What is this code output ?",
+		"possible answers": ["5", "32", "3+2", "Error"],
+		"answer": "5"
+	},
+	{
+		"id": "q9",
+		"title": "Operations",
+		"video_url": "",
+		"text": "",
+		"image":"q9.png",
+		"question": "What is this code output ?",
+		"possible answers": ["5", "32", "3+2", "Error"],
+		"answer": "32"
+	},
+	{
+		"id": "s3",
+		"title": "Certification",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "",
+		"certif_ratio": 75
 	}
 ]
