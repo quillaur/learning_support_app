@@ -24,7 +24,7 @@ def select_study_view(main_holder: st.empty):
     
     if select:
         st.session_state["selected_study"] = selected_study
-        st.session_state["study_path"] = join("classes", selected_category, selected_study)
+        st.session_state["study_path"] = join(category_path, selected_study)
         st.session_state["support_number"] = 0
 
         main_holder.empty()

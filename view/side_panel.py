@@ -26,10 +26,23 @@ def set_side_panel_view() -> None:
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
     st.sidebar.write(f"Study : {st.session_state['selected_study']}")
-    st.sidebar.write(f"Page: {st.session_state['support_number']+1} / {st.session_state['support_count']}")
+    st.sidebar.write("Study progress:")
+
+    # For a nicer color for the progress bar:
+    # https://discuss.streamlit.io/t/changing-each-progress-bar-to-different-colors/18827/3
+    st.markdown(
+    """
+    <style>
+        .stProgress > div > div > div > div {
+            background-image: linear-gradient(to right, #99ff99 , #00ccff);
+        }
+    </style>""",
+    unsafe_allow_html=True)
+
+    st.sidebar.progress((st.session_state['support_number']+1) / st.session_state['support_count'])
     st.sidebar.write(f"Good answers: {st.session_state['good_answers']} / {st.session_state['total_answers']}")
 
-    col1, col2 = st.sidebar.columns(2)
+    col1, col2 = st.sidebar.columns([3,1])
     with col1:
         previous_button()
     with col2:

@@ -11,13 +11,13 @@ def set_main_view(main_holder: st.empty) -> None:
         st.title(this_page["title"])
 
         # 3 possible types of supports:
-        if this_page["link"]:
-            st.video(this_page["link"])
-
-        elif this_page["text"]:
+        if this_page["text"]:
             st.info(this_page["text"])
+        
+        if this_page["video_url"]:
+            st.video(this_page["video_url"])
 
-        elif this_page["image"]:
+        if this_page["image"]:
             img_path = join(st.session_state["study_path"], this_page["image"])
             st.image(Image.open(img_path))
 

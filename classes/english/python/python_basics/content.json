@@ -1,21 +1,21 @@
 [
 	{
 		"title": "Introduction",
-		"link": "",
+		"video_url": "",
 		"text": "Let's learn the basics of python !",
 		"image":"",
 		"question": ""
 	},
 	{
 		"title": "Les variables",
-		"link": "https://www.youtube.com/watch?v=OFrLs22MDAw&list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm&index=1",
+		"video_url": "https://www.youtube.com/watch?v=OFrLs22MDAw&list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm&index=1",
 		"text": "",
 		"image":"",
 		"question": ""
 	},
 	{
 		"title": "Les variables",
-		"link": "",
+		"video_url": "",
 		"text": "a = '50'",
 		"image":"",
 		"question": "Quel est le type de cette variable ?",
@@ -23,8 +23,17 @@
 		"answer": "str"
 	},
 	{
+		"title": "Les variables",
+		"video_url": "",
+		"text": "a = 50",
+		"image":"",
+		"question": "Quel est le type de cette variable ?",
+		"possible answers": ["str", "int", "list", "float"],
+		"answer": "int"
+	},
+	{
 		"title": "Une image",
-		"link": "",
+		"video_url": "",
 		"text": "",
 		"image":"py_code_insight_highlight.png",
 		"question": ""
