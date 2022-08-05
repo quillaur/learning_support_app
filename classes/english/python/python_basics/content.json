@@ -158,10 +158,10 @@
 		"title": "Conditional statements",
 		"video_url": "",
 		"text": "",
-		"image":"",
-		"question": "What is the keyword to tell python 'Else if' ?",
-		"possible answers": ["else if", "elif", "elseif", "if"],
-		"answer": "elif"
+		"image":"q14.png",
+		"question": "What is the output of this code ?",
+		"possible answers": ["The variables are equal", "They are not equal", "Nothing", "Error"],
+		"answer": "The variables are equal"
 	},
 	{
 		"id": "q15",
@@ -172,6 +172,121 @@
 		"question": "This code outputs 'I can go !'.",
 		"possible answers": ["True", "False", "Maybe", "We cannot know"],
 		"answer": "False"
+	},
+	{
+		"id": "s4",
+		"title": "Lists",
+		"video_url": "https://www.youtube.com/watch?v=ohCDWZgNIU0&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=14",
+		"text": "",
+		"image":"",
+		"question": ""
+	},
+	{
+		"id": "q16",
+		"title": "Lists",
+		"video_url": "",
+		"text": "",
+		"image":"q16.png",
+		"question": "What does this code output ?",
+		"possible answers": ["banana", "pear", "chocolat", "Error"],
+		"answer": "pear"
+	},
+	{
+		"id": "q17",
+		"title": "Lists",
+		"video_url": "",
+		"text": "",
+		"image":"q17.png",
+		"question": "What does this code output ?",
+		"possible answers": ["banana", "pear", "chocolat", "Error"],
+		"answer": "Error"
+	},
+	{
+		"id": "q18",
+		"title": "Lists",
+		"video_url": "",
+		"text": "",
+		"image":"q18.png",
+		"question": "What does this code output ?",
+		"possible answers": ["banana", "pear", "chocolat", "Error"],
+		"answer": "banana"
+	},
+	{
+		"id": "q19",
+		"title": "Lists",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "The elements of a list must all be of the same type.",
+		"possible answers": ["True", "False", "Maybe", "True and False"],
+		"answer": "False"
+	},
+	{
+		"id": "s5",
+		"title": "Dictionnaries",
+		"video_url": "https://www.youtube.com/watch?v=XCcpzWs-CI4&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=15",
+		"text": "Note: in a recent python update, dictionnaries keep track of the order in which you inserted keys.",
+		"image":"",
+		"question": ""
+	},
+	{
+		"id": "q20",
+		"title": "Dictionnaries",
+		"video_url": "",
+		"text": "",
+		"image":"q20.png",
+		"question": "What does this code output ?",
+		"possible answers": ["name", "age", "pseudo", "Error"],
+		"answer": "Error"
+	},
+	{
+		"id": "q21",
+		"title": "Dictionnaries",
+		"video_url": "",
+		"text": "",
+		"image":"q21.png",
+		"question": "What does this code output ?",
+		"possible answers": ["M", 22, "Johny", "Error"],
+		"answer": "Johny"
+	},
+	{
+		"id": "q22",
+		"title": "Dictionnaries",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "Which method allows you to loop through all keys and values of a dictionnary ?",
+		"possible answers": ["pair", "keys", "get", "items"],
+		"answer": "items"
+	},
+	{
+		"id": "s6",
+		"title": "Loops",
+		"video_url": "https://www.youtube.com/watch?v=9ueMumuFv6g",
+		"text": "",
+		"image":"",
+		"question": ""
+	},
+	{
+		"id": "q22",
+		"title": "Loops",
+		"video_url": "",
+		"text": "l = ['John', 'Peter', 'Paul']",
+		"image":"",
+		"question": "What is the syntax to iterate over this list ?",
+		"possible answers": ["for e in l:", "while l", "with e in l", "for(e, l, e++):"],
+		"answer": "for e in l:"
+	},
+	{
+		"id": "q23",
+		"title": "Loops",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "What is being returned by the enumerate() fonction ?",
+		"multiselect": 1,
+		"possible answers": ["value", "indice", "tuple", "dictionnary"],
+		"answer": ["value", "indice", "tuple"]
 	},
 	{
 		"id": "s3",

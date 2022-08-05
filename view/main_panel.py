@@ -33,7 +33,11 @@ def set_main_view(main_holder: st.empty) -> None:
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
                         st.warning(f"This answer was: {this_page['answer']}")
                     else:
-                        resp = st.selectbox("Your answer:", options=this_page["possible answers"])
+                        if "multiselect" in this_page and this_page["multiselect"]:
+                            resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=this_page["possible answers"])
+                        else:
+                            resp = st.selectbox("Your answer:", options=this_page["possible answers"])
+
                         submit = st.button("Submit")
                     
                         if submit:
@@ -62,7 +66,8 @@ def set_main_view(main_holder: st.empty) -> None:
                     score_ratio = (st.session_state["score"] / st.session_state["max_score"]) * 100
 
                     if score_ratio > v:
-                        st.success("Well done! You can get this study certification !")
+                        st.balloons()
+                        st.success("Well done! You scored high enough to get this study certification !")
                     else:
                         st.error("Sorry, you did not score high enough to get this certification.")
                         st.info("Feel free to retry anytime !")
