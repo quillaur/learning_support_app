@@ -9,5 +9,5 @@ def load_study_content() -> None:
         st.session_state["content"] = json.load(json_file)
         st.session_state["support_count"] = len(st.session_state["content"])
         st.session_state["pages_done"] = [False] * st.session_state["support_count"]
-        st.session_state["good_answers"] = 0 
-        st.session_state["total_answers"] = 0 
+        st.session_state["score"] = 0
+        st.session_state["delta"] = 0 

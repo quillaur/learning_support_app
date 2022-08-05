@@ -34,10 +34,19 @@ def set_main_view(main_holder: st.empty) -> None:
                 if submit:
                     if resp == this_page["answer"]:
                         st.success("Good job ! This is correct.")
-                        st.session_state["good_answers"] += 1
+                        st.session_state["score"] += 1
+                        if st.session_state["delta"] >= 0:
+                            st.session_state["delta"] += 1
+                        else:
+                            st.session_state["delta"] = 1
                     else:
                         st.error(f"Sorry... The answer was: {this_page['answer']}")
+                        st.session_state["score"] -= 1
+
+                        if st.session_state["delta"] <= 0:
+                            st.session_state["delta"] -= 1
+                        else:
+                            st.session_state["delta"] = -1
                     
-                    st.session_state["total_answers"] += 1
                     st.session_state["pages_done"][st.session_state["support_number"]] = True
                 

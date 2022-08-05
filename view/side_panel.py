@@ -1,4 +1,5 @@
 import streamlit as st
+from math import ceil
 
 def previous_button() -> None:
     if st.session_state["support_number"] > 0:
@@ -38,10 +39,13 @@ def set_side_panel_view() -> None:
         }
     </style>""",
     unsafe_allow_html=True)
-
     st.sidebar.progress((st.session_state['support_number']+1) / st.session_state['support_count'])
-    st.sidebar.write(f"Good answers: {st.session_state['good_answers']} / {st.session_state['total_answers']}")
 
+    if st.session_state['delta'] == 0:
+        st.sidebar.metric("Your score:", value=f"{st.session_state['score']} pts")
+    else:
+        st.sidebar.metric("Your score:", value=f"{st.session_state['score']} pts", delta=st.session_state['delta'])
+    
     col1, col2 = st.sidebar.columns([3,1])
     with col1:
         previous_button()
