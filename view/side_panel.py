@@ -23,12 +23,14 @@ def next_button() -> None:
 
 
 def set_side_panel_view() -> None:
+    study_name = " ".join(st.session_state['selected_study'].split("_"))
+    st.sidebar.title(f"{study_name.capitalize()}")
+
     st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
     st.sidebar.write(f"lastname : {st.session_state['lastname']}")
     st.sidebar.write(f"Class : {st.session_state['class']}")
-    st.sidebar.write(f"Study : {st.session_state['selected_study']}")
+    
     st.sidebar.write("Study progress:")
-
     # For a nicer color for the progress bar:
     # https://discuss.streamlit.io/t/changing-each-progress-bar-to-different-colors/18827/3
     st.markdown(

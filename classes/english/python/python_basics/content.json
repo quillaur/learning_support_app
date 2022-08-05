@@ -7,29 +7,56 @@
 		"question": ""
 	},
 	{
-		"title": "Les variables",
+		"title": "Variables",
 		"video_url": "https://www.youtube.com/watch?v=OFrLs22MDAw&list=PLzMcBGfZo4-mFu00qxl0a67RhjjZj3jXm&index=1",
 		"text": "",
 		"image":"",
 		"question": ""
 	},
 	{
-		"title": "Les variables",
+		"title": "Variables",
 		"video_url": "",
 		"text": "a = '50'",
 		"image":"",
-		"question": "Quel est le type de cette variable ?",
+		"question": "What is the type of the variable ?",
 		"possible answers": ["str", "int", "list", "float"],
 		"answer": "str"
 	},
 	{
-		"title": "Les variables",
+		"title": "Variables",
 		"video_url": "",
 		"text": "a = 50",
 		"image":"",
-		"question": "Quel est le type de cette variable ?",
+		"question": "What is the type of the variable ?",
 		"possible answers": ["str", "int", "list", "float"],
 		"answer": "int"
+	},
+	{
+		"title": "Variables",
+		"video_url": "",
+		"text": "a = 50.0",
+		"image":"",
+		"question": "What is the type of the variable ?",
+		"possible answers": ["str", "int", "list", "float"],
+		"answer": "float"
+	},
+	{
+		"title": "Show a message",
+		"video_url": "",
+		"text": "",
+		"image":"",
+		"question": "To show a message on the terminal, we use :",
+		"possible answers": ["scanf", "print", "input", "logging"],
+		"answer": "print"
+	},
+	{
+		"title": "Operations",
+		"video_url": "",
+		"text": "",
+		"image":"q5.png",
+		"question": "What is this code output ?",
+		"possible answers": ["b + a", "Salut", "lutSa", "Error"],
+		"answer": "lutSa"
 	},
 	{
 		"title": "Une image",
