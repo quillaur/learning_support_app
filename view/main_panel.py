@@ -5,12 +5,25 @@ from zipfile import ZipFile
 
 
 def set_main_view(main_holder: st.empty) -> None:
-    
+    """
+    Once the student identification is done and a study has been selected, 
+    the app show what I call the 'main' view.
+    The layout of the main view must be dynamicaly updated based on the content.json file.
+    It must contain a title and then either texts, images or videos 
+    in the order given by the content file.
+    """
+    # Get the content of this specific page using 
+    # the support number key of the session state object.
     this_page = st.session_state["content"][st.session_state["support_number"]]
+
+    # I empty again the main holder because sometimes (and for unknown reasons...) 
+    # it is not fully emptied at this point.
     main_holder.empty()
     with main_holder.container():
-
+        # For each element in this page (a dictionnary).
         for k, v in this_page.items():
+            # If there is a value for this element, 
+            # it means the creator wants it to be on the page.
             if v:
                 if k == "title":
                     st.title(v)
@@ -19,14 +32,15 @@ def set_main_view(main_holder: st.empty) -> None:
                 elif k == "video_url":
                     st.video(v)
 
-                elif "image" in k:
+                elif k.startswith("image"):
+                    # Images are all compressed in a zip file names 'ressources.zip'.
                     resc_path = join(st.session_state["study_path"], "ressources.zip")
                     with ZipFile(resc_path, "r") as myzip:
                         with myzip.open(f"ressources/{v}") as img_file:
                             img = Image.open(img_file)
                             st.image(img)
                 
-                elif "text" in k:
+                elif k.startswith("text"):
                     st.info(v)
 
                 # Is there a question to ask ?

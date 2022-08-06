@@ -4,21 +4,28 @@ from os.path import join
 
 
 def select_study_view(main_holder: st.empty):
-
+    """
+    This function defines the layout of the page to select a study in the app.
+    """
+    # Fill the main_holder with the selectboxes.
     with main_holder.container():
         st.title("What do you want to study ?")
 
         # What studies are available ?
         col1, col2 = st.columns(2)
         with col1:
+            # Filter by language first.
             selected_language = st.selectbox("Language:", listdir("classes/"))
             language_path = join("classes", selected_language)
         with col2:
+            # Then filter by category.
             selected_category = st.selectbox("Category:", listdir(language_path))
             category_path = join(language_path, selected_category)
 
+        # After applying filters, show which study can be selected.
         selected_study = st.selectbox("Please select what you would like to study:", listdir(category_path))
         
+        # The select button determine when to save the results in the session state object.
         select = st.button("Select")
     
     if select:
