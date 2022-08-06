@@ -3,29 +3,37 @@ from os.path import join
 from PIL import Image
 from zipfile import ZipFile
 
-
-def update_score(user_answer: str, good_answer: str) -> None:
+def update_delta(positif: bool) -> None:
     """
-    Update the score and delta values of the session state object.
+    Update the delta value of the session state object.
 
     Args:
-        - user_answer: answer given by the user to the question.
-        - good_answer: the right answer to the question provided by the teacher in the content.json file.
+        - positif: bool indicatating if increment (True) or decrement (False) is needed.
     """
-    if user_answer == good_answer:
-        st.success("Good job ! This is correct.")
-        st.session_state["score"] += 1
+    if positif:
         if st.session_state["delta"] >= 0:
             st.session_state["delta"] += 1
         else:
             st.session_state["delta"] = 1
     else:
-        st.error(f"Sorry... The answer was: {good_answer}")
-        st.session_state["score"] -= 1
         if st.session_state["delta"] <= 0:
             st.session_state["delta"] -= 1
         else:
             st.session_state["delta"] = -1
+
+
+def update_score(positif: bool) -> None:
+    """
+    Update the score value of the session state object.
+
+    Args:
+        - positif: bool indicatating if increment (True) or decrement (False) is needed.
+    """
+    if positif:
+        st.session_state["score"] += 1
+    else:
+        st.session_state["score"] -= 1
+
 
     
 
@@ -87,14 +95,23 @@ def set_main_view(main_holder: st.empty) -> None:
 
                         submit = st.button("Submit")
                         if submit:
-                            update_score(resp, this_page["answer"])
+                            good_answer: bool = resp == this_page["answer"]
+                            update_score(good_answer)
+                            update_delta(good_answer)
+
+                            if good_answer:
+                                st.success("Good job ! This is correct.")
+                            else:
+                                st.error(f"Sorry... The answer was: {this_page['answer']}")
                             
                             st.session_state["max_score"] += 1
                             st.session_state["pages_done"][st.session_state["support_number"]] = True
                 
                 elif k == "certif_ratio":
+                    # When this is the last page, you see if you can get a certification for this study or not.
                     st.header(f"Your final score: {st.session_state['score']} / {st.session_state['max_score']}")
 
+                    # The decision is based on whether or not your score is higher than a ratio defined by the teacher.
                     score_ratio = (st.session_state["score"] / st.session_state["max_score"]) * 100
 
                     if score_ratio > v:
