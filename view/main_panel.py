@@ -4,6 +4,33 @@ from PIL import Image
 from zipfile import ZipFile
 
 
+def update_score(user_answer: str, good_answer: str) -> None:
+    """
+    Update the score and delta values of the session state object.
+
+    Args:
+        - user_answer: answer given by the user to the question.
+        - good_answer: the right answer to the question provided by the teacher in the content.json file.
+    """
+    if user_answer == good_answer:
+        st.success("Good job ! This is correct.")
+        st.session_state["score"] += 1
+        if st.session_state["delta"] >= 0:
+            st.session_state["delta"] += 1
+        else:
+            st.session_state["delta"] = 1
+    else:
+        st.error(f"Sorry... The answer was: {good_answer}")
+        st.session_state["score"] -= 1
+        if st.session_state["delta"] <= 0:
+            st.session_state["delta"] -= 1
+        else:
+            st.session_state["delta"] = -1
+
+    
+
+
+
 def set_main_view(main_holder: st.empty) -> None:
     """
     Once the student identification is done and a study has been selected, 
@@ -32,6 +59,7 @@ def set_main_view(main_holder: st.empty) -> None:
                 elif k == "video_url":
                     st.video(v)
 
+                # There can be several image keys.
                 elif k.startswith("image"):
                     # Images are all compressed in a zip file names 'ressources.zip'.
                     resc_path = join(st.session_state["study_path"], "ressources.zip")
@@ -40,6 +68,7 @@ def set_main_view(main_holder: st.empty) -> None:
                             img = Image.open(img_file)
                             st.image(img)
                 
+                # There can be several text keys.
                 elif k.startswith("text"):
                     st.info(v)
 
@@ -47,29 +76,18 @@ def set_main_view(main_holder: st.empty) -> None:
                 elif k == "question":
                     st.write(v)
 
+                    # If the question has already been seen during this session, 
+                    # just show the answer of the question. 
+                    # Make it impossible for the user to answer several times to the same question.
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
                         st.warning(f"This answer was: {this_page['answer']}")
                     else:
+                        # Show the possible answers in a multiselect fassion.
                         resp = st.multiselect("Your answer:", options=this_page["possible answers"])
 
                         submit = st.button("Submit")
-                    
                         if submit:
-                            if resp == this_page["answer"]:
-                                st.success("Good job ! This is correct.")
-                                st.session_state["score"] += 1
-                                if st.session_state["delta"] >= 0:
-                                    st.session_state["delta"] += 1
-                                else:
-                                    st.session_state["delta"] = 1
-                            else:
-                                st.error(f"Sorry... The answer was: {this_page['answer']}")
-                                st.session_state["score"] -= 1
-
-                                if st.session_state["delta"] <= 0:
-                                    st.session_state["delta"] -= 1
-                                else:
-                                    st.session_state["delta"] = -1
+                            update_score(resp, this_page["answer"])
                             
                             st.session_state["max_score"] += 1
                             st.session_state["pages_done"][st.session_state["support_number"]] = True
