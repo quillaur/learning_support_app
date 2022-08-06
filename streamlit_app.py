@@ -5,7 +5,7 @@ from view.side_panel import set_side_panel_view
 from view.student_identification import set_identification_form
 from view.study_selection import select_study_view
 
-# st.set_page_config("Learning app", layout="wide")
+# Set browser tab name and potential
 st.set_page_config("Learning app")
 
 # To change content from one page to another, 
