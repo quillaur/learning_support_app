@@ -2,7 +2,7 @@ from os.path import join
 import streamlit as st
 import json
 
-
+@st.cache()
 def load_study_content() -> None:
     study_path = join(st.session_state["study_path"], "content.json")
     with open(study_path, "r") as json_file:
