@@ -1,3 +1,4 @@
+import re
 import streamlit as st
 from os.path import join
 from PIL import Image, ImageDraw, ImageFont
@@ -134,8 +135,9 @@ def set_main_view(main_holder: st.empty) -> None:
                     # If the question has already been seen during this session, 
                     # just show the answer of the question. 
                     # Make it impossible for the user to answer several times to the same question.
+                    answer_count = len(this_page['answer'])
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
-                        if len(this_page['answer']) > 1:
+                        if answer_count > 1:
                             st.warning(f"The answers were: {', '.join(this_page['answer'])}")
                         else:
                             st.warning(f"The answer was: {', '.join(this_page['answer'])}")
@@ -144,7 +146,11 @@ def set_main_view(main_holder: st.empty) -> None:
                         col1, col2 = st.columns(2)
                         with col1:
                             with st.form("answer select"):
-                                resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=None)
+                                if answer_count > 1:
+                                    resp = st.multiselect("Your answer(s):", options=this_page["possible answers"], default=None)
+                                else:
+                                    resp = st.selectbox("Your answer:", options=[None]+this_page["possible answers"])
+                                    resp = [resp]
 
                                 submit = st.form_submit_button()
                                 if submit:
