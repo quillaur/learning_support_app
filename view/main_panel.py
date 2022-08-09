@@ -1,6 +1,7 @@
 import streamlit as st
 from os.path import join
-from PIL import Image
+from PIL import Image, ImageDraw, ImageFont
+from matplotlib import font_manager
 from zipfile import ZipFile
 
 def update_delta(positif: bool) -> None:
@@ -74,6 +75,20 @@ def set_main_view(main_holder: st.empty) -> None:
                     with ZipFile(resc_path, "r") as myzip:
                         with myzip.open(f"ressources/{v}") as img_file:
                             img = Image.open(img_file)
+                    
+                            if "certificat" in v:
+                                # Call draw Method to add 2D graphics in an image
+                                I1 = ImageDraw.Draw(img)
+                                # Custom font style and font size
+                                font = font_manager.FontProperties(family='sans-serif', weight='bold')
+                                file = font_manager.findfont(font)
+                                myFont = ImageFont.truetype(file, 50)
+                                # Add Text to an image
+                                I1.text((620,200), f"{st.session_state['firstname']} {st.session_state['lastname']}", font=myFont, fill=(255, 0, 0))
+
+                                study_name = " ".join(st.session_state['selected_study'].split("_"))
+                                I1.text((620,360), study_name.capitalize(), font=myFont, fill=(255, 0, 0))
+                            
                             st.image(img)
                 
                 # There can be several text keys.
@@ -108,11 +123,11 @@ def set_main_view(main_holder: st.empty) -> None:
                             st.session_state["pages_done"][st.session_state["support_number"]] = True
                 
                 elif k == "certif_ratio":
-                    # When this is the last page, you see if you can get a certification for this study or not.
-                    st.header(f"Your final score: {st.session_state['score']} / {st.session_state['max_score']}")
-
                     # The decision is based on whether or not your score is higher than a ratio defined by the teacher.
-                    score_ratio = (st.session_state["score"] / st.session_state["max_score"]) * 100
+                    score_ratio = (st.session_state["score"] / st.session_state["max_score"]) * 100 if st.session_state["max_score"] > 0 else 0
+
+                    # When this is the last page, you see if you can get a certification for this study or not.
+                    st.header(f"Your final score: {st.session_state['score']} / {st.session_state['max_score']} ({score_ratio}%)")
 
                     if score_ratio > v:
                         st.balloons()

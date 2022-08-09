@@ -3,8 +3,8 @@
 		"id": "s1",
 		"title": "Introduction",
 		"video_url": "",
+		"image":"course_img.png",
 		"text": "Let's learn the basics of python ! Here you will learn about python variable types, conditional statements, data structures and loops. To do this, I will use various youtube channels, slides and interactive questions. Let's get started !",
-		"image":"",
 		"question": ""
 	},
 	{
@@ -354,8 +354,13 @@
 	},
 	{
 		"id": "s8",
+		"title": "References",
+		"image":"references.png"
+	},
+	{
+		"id": "s9",
 		"title": "Certification",
-		"image":"references.png",
+		"image":"certificat.png",
 		"certif_ratio": 75
 	}
 ]
