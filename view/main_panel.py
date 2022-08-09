@@ -71,6 +71,7 @@ def draw_image(image_name: str) -> Image:
     with ZipFile(resc_path, "r") as myzip:
         with myzip.open(f"ressources/{image_name}") as img_file:
             img = Image.open(img_file)
+            img.load()
     
             if "certificat" in image_name:
                 draw_certificat_info(img)
@@ -131,7 +132,10 @@ def set_main_view(main_holder: st.empty) -> None:
                     # just show the answer of the question. 
                     # Make it impossible for the user to answer several times to the same question.
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
-                        st.warning(f"The answer was: {this_page['answer']}")
+                        if len(this_page['answer']) > 1:
+                            st.warning(f"The answers were: {', '.join(this_page['answer'])}")
+                        else:
+                            st.warning(f"The answer was: {', '.join(this_page['answer'])}")
                     else:
                         # Show the possible answers in a multiselect fassion.
                         resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=None)
