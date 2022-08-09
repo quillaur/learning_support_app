@@ -142,7 +142,9 @@ def set_main_view(main_holder: st.empty) -> None:
 
                         submit = st.button("Submit")
                         if submit:
-                            good_answer: bool = resp.sort() == this_page["answer"].sort()
+                            resp.sort()
+                            this_page["answer"].sort()
+                            good_answer: bool = resp == this_page["answer"]
                             update_score(good_answer)
                             update_delta(good_answer)
 
