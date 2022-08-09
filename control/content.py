@@ -1,8 +1,9 @@
+from cmath import log
 from os.path import join
 import streamlit as st
 import json
 
-@st.cache()
+
 def load_study_content() -> None:
     """
     Using the streamlit session_state object, 
@@ -18,3 +19,4 @@ def load_study_content() -> None:
         st.session_state["score"] = 0
         st.session_state["max_score"] = 0
         st.session_state["delta"] = 0 
+    

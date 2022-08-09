@@ -67,7 +67,7 @@ def set_side_panel_view() -> None:
     st.sidebar.progress(progress)
 
     # Add a slider for page debug purpose.
-    st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
+    # st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
 
     # Add a metric to indicate the score of the student.
     # The delta shows how many points on a row were lost or gained.
