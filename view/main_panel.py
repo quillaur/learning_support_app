@@ -49,7 +49,7 @@ def draw_certificat_info(img: Image) -> None:
     txt = f"{st.session_state['firstname']} {st.session_state['lastname']}"
     # Adjust font size until it fits the box:
     while myFont.getsize(txt)[0] > 400:
-        font_size -= 1
+        font_size -= 5
         myFont = ImageFont.truetype(file, font_size)
 
     # Add name of student to certificat
@@ -61,8 +61,10 @@ def draw_certificat_info(img: Image) -> None:
     I1.text((615,365), study_name.capitalize(), font=myFont, fill=color)
 
     # Add score
+    font_size = 50
+    myFont = ImageFont.truetype(file, font_size)
     score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
-    I1.text((115,290), f"Success: {score_ratio}%", font=myFont, fill=color)
+    I1.text((85,285), f"Success: {score_ratio}%", font=myFont, fill=color)
 
 
 def draw_image(image_name: str) -> Image:
@@ -176,7 +178,7 @@ def set_main_view(main_holder: st.empty) -> None:
                         with col2:          
                             with open(img_name, "rb") as bfile:
                                 st.download_button(
-                                    label="Download", 
+                                    label="Download Your Certificat", 
                                     data=bfile,
                                     file_name=img_name,
                                     mime="image/png"
