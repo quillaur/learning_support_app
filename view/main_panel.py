@@ -55,7 +55,7 @@ def draw_certificat_info(img: Image) -> None:
 
     # Add name of student to certificat
     color = (255, 255, 255)
-    I1.rounded_rectangle((50, 50, 400, 150), outline="blue", width=3, radius=7)
+    
     I1.text((615,210), txt, font=myFont, fill=color)
 
     # Add study name
@@ -63,10 +63,14 @@ def draw_certificat_info(img: Image) -> None:
     I1.text((615,365), study_name.capitalize(), font=myFont, fill=color)
 
     # Add score
+    I1.rounded_rectangle((45, 260, 500, 360), outline="blue", width=5, radius=20)
+    score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
     font_size = 50
     myFont = ImageFont.truetype(file, font_size)
-    score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
-    I1.text((85,285), f"Success: {score_ratio}%", font=myFont, fill=color)
+    txt = f"Success: {score_ratio}%"
+    W, H = 500 - 45, 360 - 260
+    w, h = myFont.getsize(txt)
+    I1.text(((W-w)/2,(H-h)/2), txt, font=myFont, fill=color)
 
 
 def draw_image(image_name: str) -> Image:
@@ -147,7 +151,7 @@ def set_main_view(main_holder: st.empty) -> None:
                         with col1:
                             with st.form("answer select"):
                                 if answer_count > 1:
-                                    resp = st.multiselect("Your answer(s):", options=this_page["possible answers"], default=None)
+                                    resp = st.multiselect("Your answer(s): (several answers are possible)", options=this_page["possible answers"], default=None)
                                 else:
                                     resp = st.selectbox("Your answer:", options=[None]+this_page["possible answers"])
                                     resp = [resp]
