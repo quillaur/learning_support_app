@@ -54,6 +54,7 @@ def draw_certificat_info(img: Image) -> None:
 
     # Add name of student to certificat
     color = (255, 255, 255)
+    I1.rounded_rectangle((50, 50, 400, 150), outline="blue", width=3, radius=7)
     I1.text((615,210), txt, font=myFont, fill=color)
 
     # Add study name
@@ -140,23 +141,27 @@ def set_main_view(main_holder: st.empty) -> None:
                             st.warning(f"The answer was: {', '.join(this_page['answer'])}")
                     else:
                         # Show the possible answers in a multiselect fassion.
-                        resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=None)
+                        col1, col2 = st.columns(2)
+                        with col1:
+                            with st.form("answer select"):
+                                resp = st.multiselect("Your answer:", options=this_page["possible answers"], default=None)
 
-                        submit = st.button("Submit")
-                        if submit:
-                            resp.sort()
-                            this_page["answer"].sort()
-                            good_answer: bool = resp == this_page["answer"]
-                            update_score(good_answer)
-                            update_delta(good_answer)
-
-                            if good_answer:
-                                st.success("Good job ! This is correct.")
-                            else:
-                                st.error(f"Sorry... The answer was: {this_page['answer']}")
+                                submit = st.form_submit_button()
+                                if submit:
+                                    resp.sort()
+                                    this_page["answer"].sort()
+                                    good_answer: bool = resp == this_page["answer"]
+                                    update_score(good_answer)
+                                    update_delta(good_answer)
+                                    
+                                    with col2:
+                                        if good_answer:
+                                            st.success("Good job ! This is correct.")
+                                        else:
+                                            st.error(f"Sorry... The answer was: {this_page['answer']}")
                             
-                            st.session_state["max_score"] += 1
-                            st.session_state["pages_done"][st.session_state["support_number"]] = True
+                                    st.session_state["max_score"] += 1
+                                    st.session_state["pages_done"][st.session_state["support_number"]] = True
                 
                 elif k == "certif_ratio":
                     # The decision is based on whether or not your score is higher than a ratio defined by the teacher.
