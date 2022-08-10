@@ -15,10 +15,11 @@ main_holder = st.empty()
 ##########################
 # Student identification #
 ##########################
-if "firstname" not in st.session_state:
-    set_identification_form(main_holder)
+# if "firstname" not in st.session_state:
+#     set_identification_form(main_holder)
 
-if "firstname" in st.session_state and "support_number" not in st.session_state:
+# if "firstname" in st.session_state and "support_number" not in st.session_state:
+if "support_number" not in st.session_state:
     ########################
     # Study selection page #
     ########################

@@ -48,6 +48,7 @@ def draw_certificat_info(img: Image) -> None:
     font_size = 50
     myFont = ImageFont.truetype(file, font_size)
     txt = f"{st.session_state['firstname']} {st.session_state['lastname']}"
+    # txt = f"{firstname} {lastname}"
     # Adjust font size until it fits the box:
     while myFont.getsize(txt)[0] > 400:
         font_size -= 5
@@ -180,26 +181,44 @@ def set_main_view(main_holder: st.empty) -> None:
                     # When this is the last page, you see if you can get a certification for this study or not.
                     score_msg = f"Your final score: {st.session_state['score']} / {st.session_state['max_score']} ({score_ratio}%)"
 
-                    if score_ratio > v:
+                    # if score_ratio > v:
+                    if 100 > v:
                         st.balloons()
-                        st.success("Well done! You scored high enough to get this study certification !")
 
-                        img = draw_image(this_page["image"])
-                        img_name = prep_certif_for_download(img)
+                        if "firstname" not in st.session_state:
+                            with st.form("Identification"):
+                                st.success("Well done! You scored high enough to get this study certification !")
+                                st.warning("Enter your name and download your personal certification !")
 
-                        col1, col2 = st.columns([4,1])
-                        with col1:
-                            st.warning("Don't forget to download it !")   
-                        with col2:          
-                            with open(img_name, "rb") as bfile:
-                                st.download_button(
-                                    label="Download Your Certificat", 
-                                    data=bfile,
-                                    file_name=img_name,
-                                    mime="image/png"
-                                    )
+                                col1, col2 = st.columns(2)
+                                with col1:
+                                    firstname = st.text_input("Firstname:")
+                                with col2:
+                                    lastname = st.text_input("Lastname:")
                         
-                        st.image(img)
+                                submit = st.form_submit_button()
+                                
+                                if submit:
+                                    st.session_state['firstname'] = firstname
+                                    st.session_state['lastname'] = lastname
+                                    st.experimental_rerun()
+                        else:
+                            img = draw_image(this_page["image"])
+                            img_name = prep_certif_for_download(img)
+
+                            col1, col2 = st.columns([4,1])
+                            with col1:
+                                st.warning("Don't forget to download it !")   
+                            with col2:          
+                                with open(img_name, "rb") as bfile:
+                                    st.download_button(
+                                        label="Download Your Certificat", 
+                                        data=bfile,
+                                        file_name=img_name,
+                                        mime="image/png"
+                                        )
+                    
+                            st.image(img)
                     else:
                         st.error(score_msg)
                         st.warning("Sorry, you did not score high enough to get this certification.")

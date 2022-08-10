@@ -46,10 +46,10 @@ def set_side_panel_view() -> None:
     study_name = " ".join(st.session_state['selected_study'].split("_"))
     st.sidebar.title(f"{study_name.capitalize()}")
 
-    # Show the student caracteristics.
-    st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
-    st.sidebar.write(f"lastname : {st.session_state['lastname']}")
-    st.sidebar.write(f"Class : {st.session_state['class']}")
+    # # Show the student caracteristics.
+    # st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
+    # st.sidebar.write(f"lastname : {st.session_state['lastname']}")
+    # st.sidebar.write(f"Class : {st.session_state['class']}")
     
     # Add a progress bar to indicate where we are in the study.
     progress = ceil((st.session_state['support_number']+1) / st.session_state['support_count']*100)
@@ -67,7 +67,7 @@ def set_side_panel_view() -> None:
     st.sidebar.progress(progress)
 
     # Add a slider for page debug purpose.
-    # st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
+    st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
 
     # Add a metric to indicate the score of the student.
     # The delta shows how many points on a row were lost or gained.
