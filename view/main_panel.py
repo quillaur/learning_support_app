@@ -161,7 +161,7 @@ def set_main_view(main_holder: st.empty) -> None:
                                         if good_answer:
                                             st.success("Good job ! This is correct.")
                                         else:
-                                            st.error(f"Sorry... The answer was: {this_page['answer']}")
+                                            st.error(f"Sorry... The answer was: {', '.join(this_page['answer'])}")
                             
                                     st.session_state["max_score"] += 1
                                     st.session_state["pages_done"][st.session_state["support_number"]] = True
