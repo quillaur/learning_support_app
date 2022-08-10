@@ -67,18 +67,20 @@ def set_side_panel_view() -> None:
     st.sidebar.progress(progress)
 
     # Add a slider for page debug purpose.
-    st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
+    # st.session_state['support_number'] = st.sidebar.slider("Select a page:", 1, st.session_state['support_count'], st.session_state['support_number']+1) - 1
 
     # Add a metric to indicate the score of the student.
     # The delta shows how many points on a row were lost or gained.
-    if st.session_state['delta'] == 0:
-        st.sidebar.metric("Your score:", value=f"{st.session_state['score']} pts")
-    else:
-        st.sidebar.metric("Your score:", value=f"{st.session_state['score']} pts", delta=st.session_state['delta'])
+    _, c2, _ = st.sidebar.columns(3)
+    with c2:
+        if st.session_state['delta'] == 0:
+            st.metric("Your score:", value=f"{st.session_state['score']} pts")
+        else:
+            st.metric("Your score:", value=f"{st.session_state['score']} pts", delta=st.session_state['delta'])
     
     # Place the previous and next button.
-    col1, col2 = st.sidebar.columns([3,1])
+    col1, col2, col3 = st.sidebar.columns(3)
     with col1:
         previous_button()
-    with col2:
+    with col3:
         next_button()

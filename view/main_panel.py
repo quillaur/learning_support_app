@@ -135,9 +135,9 @@ def set_main_view(main_holder: st.empty) -> None:
                     answer_count = len(this_page['answer'])
                     if st.session_state["pages_done"][st.session_state["support_number"]]:
                         if answer_count > 1:
-                            st.warning(f"The answers were: {', '.join(this_page['answer'])}")
+                            st.info(f"The answers were: {', '.join(this_page['answer'])}")
                         else:
-                            st.warning(f"The answer was: {', '.join(this_page['answer'])}")
+                            st.info(f"The answer was: {', '.join(this_page['answer'])}")
                     else:
                         # Show the possible answers in a multiselect fassion.
                         col1, col2 = st.columns(2)
@@ -173,8 +173,8 @@ def set_main_view(main_holder: st.empty) -> None:
                     # When this is the last page, you see if you can get a certification for this study or not.
                     score_msg = f"Your final score: {st.session_state['score']} / {st.session_state['max_score']} ({score_ratio}%)"
 
-                    # if score_ratio > v:
-                    if 100 > v:
+                    if score_ratio > v:
+                    # if 100 > v:
                         st.balloons()
 
                         if "firstname" not in st.session_state:
