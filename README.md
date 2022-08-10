@@ -1,7 +1,7 @@
 # learning_support_app
 
 The app is available on streamlit cloud share:
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]((https://quillaur-learning-support-app-streamlit-app-4rdofa.streamlitapp.com/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://quillaur-learning-support-app-streamlit-app-4rdofa.streamlitapp.com/)
 
 ## Purpose
 This app is designed to present study supports to students. All study contents are freely available, open source, and based on freely available online resources. 
