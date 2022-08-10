@@ -43,35 +43,27 @@ def draw_certificat_info(img: Image) -> None:
     # Call draw Method to add 2D graphics in an image
     I1 = ImageDraw.Draw(img)
     # Custom font style and font size
-    font = font_manager.FontProperties(family='sans-serif', weight='bold')
+    font = font_manager.FontProperties(family='cursive', weight='bold')
     file = font_manager.findfont(font)
-    font_size = 50
+    font_size = 45
     myFont = ImageFont.truetype(file, font_size)
     txt = f"{st.session_state['firstname']} {st.session_state['lastname']}"
-    # txt = f"{firstname} {lastname}"
-    # Adjust font size until it fits the box:
-    while myFont.getsize(txt)[0] > 400:
-        font_size -= 5
-        myFont = ImageFont.truetype(file, font_size)
+    txt = txt if myFont.getsize(txt)[0] < 400 else "\n".join(txt.split())
 
     # Add name of student to certificat
     color = (255, 255, 255)
     
-    I1.text((615,210), txt, font=myFont, fill=color)
+    I1.text((800,230), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add study name
     study_name = " ".join(st.session_state['selected_study'].split("_"))
-    I1.text((615,365), study_name.capitalize(), font=myFont, fill=color)
+    I1.text((800,395), study_name.capitalize(), font=myFont, fill=color, anchor="mm", align='center')
 
     # Add score
-    I1.rounded_rectangle((45, 260, 500, 360), outline="blue", width=5, radius=20)
     score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
-    font_size = 50
-    myFont = ImageFont.truetype(file, font_size)
+    # score_ratio = 80
     txt = f"Success: {score_ratio}%"
-    W, H = 500 - 45, 360 - 260
-    w, h = myFont.getsize(txt)
-    I1.text(((W-w)/2,(H-h)/2), txt, font=myFont, fill=color)
+    I1.text((260,315), txt, font=myFont, fill=color, anchor="mm", align='center')
 
 
 def draw_image(image_name: str) -> Image:
