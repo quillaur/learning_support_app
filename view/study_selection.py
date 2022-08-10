@@ -15,7 +15,6 @@ def select_study_view(main_holder: st.empty):
         col1, col2 = st.columns(2)
         with col1:
             # Filter by language first.
-            print(listdir("classes/"))
             selected_language = st.selectbox("Language:", [d for d in listdir("classes/") if isdir(join("classes/", d))])
             language_path = join("classes", selected_language)
         with col2:
