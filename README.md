@@ -15,10 +15,10 @@ The content of the pages is taken from the classes directory and loaded with the
 The layout of the pages is coded in the view directory.
 
 ## Questions
-As a student goes through the study, questions will be presented to evaluate his or her understanding and attention level.
+As a student goes through the study, questions will be presented to evaluate his or her understanding and attention level. A point is given for each good answer and one is taken away for each bad answer.
 
 ## Certification
-If the student score high enough, he or she is rewarded with a downloadable personnal certificate at the end of the study.
+If the student scores high enough, he or she is rewarded with a downloadable personnal certificate at the end of the study.
 
 # To add a study
 Please refer to the [following documentation](classes/README.md).
