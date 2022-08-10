@@ -2,7 +2,7 @@
 
 The app is available on streamlit cloud share:
 ```markdown
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]https://quillaur-learning-support-app-streamlit-app-4rdofa.streamlitapp.com/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://quillaur-learning-support-app-streamlit-app-4rdofa.streamlitapp.com/)
 ```
 
 ## Purpose
