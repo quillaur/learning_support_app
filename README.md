@@ -13,3 +13,9 @@ Studies are organized in categories which are themselves organized by languages.
 ## Study pages
 The content of the pages is taken from the classes directory and loaded with the code present in the control directory.
 The layout of the pages is coded in the view directory.
+
+## Questions
+As a student goes through the study, questions will be presented to evaluate his or her understanding and attention level.
+
+## Certification
+If the student score high enough, he or she is rewarded with a downloadable personnal certificate at the end of the study.
