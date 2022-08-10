@@ -5,7 +5,7 @@ In this repository, you can find the different study contents available in this 
 ## Directory organisation
 * The first level of subdirectories indicates the language in which the study has been written.
 * The second level of subdirectories indicates the category in which each study belong.
-* The third level contains the names of each available study.
+* The third level contains the names of each available study for that category.
 
 ## Study composition
 Inside each third level directory, there must be 2 files:
