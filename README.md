@@ -19,3 +19,6 @@ As a student goes through the study, questions will be presented to evaluate his
 
 ## Certification
 If the student score high enough, he or she is rewarded with a downloadable personnal certificate at the end of the study.
+
+# To add a study
+Please refer to the [following documentation](classes/README.md).
