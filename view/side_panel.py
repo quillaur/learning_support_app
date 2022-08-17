@@ -84,3 +84,14 @@ def set_side_panel_view() -> None:
         previous_button()
     with col3:
         next_button()
+    
+    # Add a possibility to go back to the main menu.
+    with st.sidebar.expander("Go to main menu"):
+        st.warning("All your progress will be lost.")
+
+        if st.button("Confirm"):
+            # For main menu (study selection view), 
+            # session state object needs to be cleared.
+            st.session_state.clear()
+            # Refresh the page.
+            st.experimental_rerun()

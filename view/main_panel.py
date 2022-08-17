@@ -165,6 +165,7 @@ def set_main_view(main_holder: st.empty) -> None:
                             
                                     st.session_state["max_score"] += 1
                                     st.session_state["pages_done"][st.session_state["support_number"]] = True
+
                 
                 elif k == "certif_ratio":
                     # The decision is based on whether or not your score is higher than a ratio defined by the teacher.
