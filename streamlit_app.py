@@ -2,7 +2,7 @@ import streamlit as st
 from control.content import load_study_content
 from view.main_panel import set_main_view
 from view.side_panel import set_side_panel_view
-from view.student_identification import set_identification_form
+# from view.student_identification import set_identification_form
 from view.study_selection import select_study_view
 
 # Set browser tab name and potential

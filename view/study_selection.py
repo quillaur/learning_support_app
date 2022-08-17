@@ -9,24 +9,26 @@ def select_study_view(main_holder: st.empty):
     """
     # Fill the main_holder with the selectboxes.
     with main_holder.container():
-        st.title("What do you want to study ?")
+        st.title("Learning ressources")
 
         # What studies are available ?
         col1, col2 = st.columns(2)
         with col1:
+            # Show a welcomy image
+            st.image("view\love_to_learn_and_teach.jpg")
+            
+        with col2:
             # Filter by language first.
             selected_language = st.selectbox("Language:", [d for d in listdir("classes/") if isdir(join("classes/", d))])
             language_path = join("classes", selected_language)
-        with col2:
             # Then filter by category.
             selected_category = st.selectbox("Category:", [d for d in listdir(language_path) if isdir(join(language_path, d))])
             category_path = join(language_path, selected_category)
-
-        # After applying filters, show which study can be selected.
-        selected_study = st.selectbox("Please select what you would like to study:", [d for d in listdir(category_path) if isdir(join(category_path, d))])
+            # After applying filters, show which study can be selected.
+            selected_study = st.selectbox("Please select what you would like to study:", [d for d in listdir(category_path) if isdir(join(category_path, d))])
         
-        # The select button determine when to save the results in the session state object.
-        select = st.button("Select")
+            # The select button determine when to save the results in the session state object.
+            select = st.button("Select")
     
     if select:
         st.session_state["selected_study"] = selected_study
