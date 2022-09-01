@@ -38,6 +38,35 @@ def update_score(positif: bool) -> None:
         st.session_state["score"] -= 1
 
 
+def reformat_study_name(study_name: str) -> str:
+    """
+    Study names are drawn from directory names.
+    By convention, I write them with underscores and no capitalization.
+    Correct this for them to be nicer to read.
+
+    Args: 
+        - study_name: name of the study taken from directory list.
+
+    Returns:
+        The capitalized study name with spaces instead of underscores. 
+    """
+    study_name = " ".join(study_name.split("_"))
+    return study_name.capitalize()
+
+def reverse_reformat(study_name: str) -> str:
+    """
+    Reverse the reformating of the previously written function (reformat_study_name).
+
+    Args: 
+        - study_name: name of the study taken from directory list.
+
+    Returns:
+        The lowered study name with underscores instead of spaces. 
+    """
+    study_name = "_".join(study_name.split(" "))
+    return study_name.lower()
+
+
     
 def draw_certificat_info(img: Image) -> None:
     # Call draw Method to add 2D graphics in an image
@@ -56,8 +85,7 @@ def draw_certificat_info(img: Image) -> None:
     I1.text((800,230), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add study name
-    study_name = " ".join(st.session_state['selected_study'].split("_"))
-    I1.text((800,395), study_name.capitalize(), font=myFont, fill=color, anchor="mm", align='center')
+    I1.text((800,395), reformat_study_name(st.session_state['selected_study']), font=myFont, fill=color, anchor="mm", align='center')
 
     # Add score
     score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
