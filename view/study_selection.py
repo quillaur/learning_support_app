@@ -15,7 +15,7 @@ def select_study_view(main_holder: st.empty):
         col1, col2 = st.columns(2)
         with col1:
             # Show a welcomy image
-            st.image("view\love_to_learn_and_teach.jpg")
+            st.image("view/love_to_learn_and_teach.jpg")
             
         with col2:
             # Filter by language first.
