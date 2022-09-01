@@ -67,6 +67,9 @@ def reverse_reformat(study_name: str) -> str:
     return study_name.lower()
 
 
+def adapt_string_to_font(txt: str, myFont: ImageFont) -> str:
+    return txt if myFont.getsize(txt)[0] < 400 else "\n".join(txt.split())
+
     
 def draw_certificat_info(img: Image) -> None:
     # Call draw Method to add 2D graphics in an image
@@ -77,7 +80,7 @@ def draw_certificat_info(img: Image) -> None:
     font_size = 45
     myFont = ImageFont.truetype(file, font_size)
     txt = f"{st.session_state['firstname']} {st.session_state['lastname']}"
-    txt = txt if myFont.getsize(txt)[0] < 400 else "\n".join(txt.split())
+    txt = adapt_string_to_font(txt, myFont)
 
     # Add name of student to certificat
     color = (255, 255, 255)
@@ -85,7 +88,8 @@ def draw_certificat_info(img: Image) -> None:
     I1.text((800,230), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add study name
-    I1.text((800,395), reformat_study_name(st.session_state['selected_study']), font=myFont, fill=color, anchor="mm", align='center')
+    txt = adapt_string_to_font(reformat_study_name(st.session_state['selected_study']), myFont)
+    I1.text((800,395), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add score
     score_ratio = ceil((st.session_state["score"] / st.session_state["max_score"]) * 100) if st.session_state["max_score"] > 0 else 0
