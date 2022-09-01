@@ -1,0 +1,45 @@
+[
+	{
+		"id": "s1",
+		"title": "",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "Hi there ! Let's see how your computer considers images and how to play with theses notions using OpenCV. I hope you'll enjoy the ride !",
+		"question": ""
+	},
+    {
+		"id": "v1",
+		"title": "",
+		"video_url": "https://www.youtube.com/watch?v=15aqFQQVBWU",
+        "video_source": "Code.org (youtube)",
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+    {
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"q1.png",
+		"text": "Where a colored image would have 3 numbers per pixel, a grayscale one only has 1 number per pixel: the gray intensity.",
+		"question": "What is the coordinate of the pixel value 243 ?",
+		"possible answers": ["0:0", "2:1", "3:1", "1:3"],
+		"answer": ["2:1"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"q1.png",
+		"text": "",
+		"question": "What is the pixel quantification of a grayscaled image ?",
+		"possible answers": ["256", "255", "768", "No way to know !"],
+		"answer": ["256"]
+	},
+    {
+		"id": "s9",
+		"title": "Certification",
+		"image":"certificat.png",
+		"certif_ratio": 75
+	}
+]
