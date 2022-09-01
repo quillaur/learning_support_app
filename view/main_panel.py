@@ -70,7 +70,7 @@ def draw_image(image_name: str) -> Image:
     # Images are all compressed in a zip file names 'ressources.zip'.
     resc_path = join(st.session_state["study_path"], "ressources.zip")
     with ZipFile(resc_path, "r") as myzip:
-        with myzip.open(f"ressources/{image_name}") as img_file:
+        with myzip.open(f"{image_name}") as img_file:
             img = Image.open(img_file)
             img.load()
     
