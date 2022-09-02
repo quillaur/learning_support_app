@@ -4,7 +4,7 @@
 		"title": "",
 		"video_url": "",
 		"image":"course_img.png",
-		"text": "Hi there ! Let's see how your computer considers images and how to play with theses notions using OpenCV. I hope you'll enjoy the ride !",
+		"text": "Hi there ! Let's see how your computer considers images and how to play with theses notions using Python 3 and OpenCV. I hope you'll enjoy the ride !",
 		"question": ""
 	},
     {
@@ -35,6 +35,46 @@
 		"question": "What is the pixel quantification of a grayscaled image ?",
 		"possible answers": ["256", "255", "768", "No way to know !"],
 		"answer": ["256"]
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"q3.png",
+		"text": "",
+		"question": "If I substract 50% to all pixel intensities, the image becomes: ",
+		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
+		"answer": ["darker", "under exposed"]
+	},
+	{
+		"id": "s2",
+		"title": "",
+		"video_url": "",
+		"image":"s2.png",
+		"text": "Here it is ! A darker or under exposed image with its pixel intensity histogram.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"q3.png",
+		"text": "",
+		"question": "If I add 50% to all pixel intensities, the image becomes: ",
+		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
+		"answer": ["lighter", "over exposed"]
+	},
+	{
+		"id": "s3",
+		"title": "",
+		"video_url": "",
+		"image":"s3.png",
+		"text": "Here it is ! A lighter or over exposed image with its pixel intensity histogram.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
 	},
     {
 		"id": "s9",
