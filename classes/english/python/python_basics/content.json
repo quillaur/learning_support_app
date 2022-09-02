@@ -11,7 +11,7 @@
 		"id": "s2",
 		"title": "Hello world",
 		"video_url": "https://www.youtube.com/watch?v=KOdfpbnWLVo&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=2",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "Socratica (youtube)",
 		"text": "",
 		"image":"",
 		"question": ""
@@ -20,7 +20,7 @@
 		"id": "s9",
 		"title": "Variables",
 		"video_url": "https://www.youtube.com/watch?v=OH86oLzVzzw",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "DataCamp (youtube)",
 		"text": "",
 		"image":"",
 		"question": ""
@@ -119,7 +119,7 @@
 		"id": "s3",
 		"title": "Conditional statements",
 		"video_url": "https://www.youtube.com/watch?v=f4KOjWS_KZs",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "Socratica (youtube)",
 		"text": "Note: it is now preferable to use input() instead of raw_input() in python 3.",
 		"image":"",
 		"question": ""
@@ -188,7 +188,7 @@
 		"id": "s4",
 		"title": "Lists",
 		"video_url": "https://www.youtube.com/watch?v=ohCDWZgNIU0&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=14",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "Socratica (youtube)",
 		"text": "",
 		"image":"",
 		"question": ""
@@ -247,7 +247,7 @@
 		"id": "s5",
 		"title": "Dictionnaries",
 		"video_url": "https://www.youtube.com/watch?v=XCcpzWs-CI4&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=15",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "Socratica (youtube)",
 		"text": "Note: in a recent python update, dictionnaries keep track of the order in which you inserted keys.",
 		"image":"",
 		"question": ""
@@ -286,7 +286,7 @@
 		"id": "s6",
 		"title": "Loops",
 		"video_url": "https://www.youtube.com/watch?v=9ueMumuFv6g",
-		"video_source": "Sorastica (youtube)",
+		"video_source": "Programming with Mosh (youtube)",
 		"text": "",
 		"image":"",
 		"question": ""
