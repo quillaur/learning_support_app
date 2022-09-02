@@ -6,7 +6,7 @@ from view.side_panel import set_side_panel_view
 from view.study_selection import select_study_view
 
 # Set browser tab name and potential
-st.set_page_config("Learning app")
+st.set_page_config("Learning app", layout="wide")
 
 # To change content from one page to another, 
 # I need to initialize empty containers and clear / fill them as needed.
