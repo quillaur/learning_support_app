@@ -4,7 +4,7 @@
 		"title": "",
 		"video_url": "",
 		"image":"course_img.png",
-		"text": "Hi there ! Let's see how your computer considers images and how to play with theses notions using Python 3 and OpenCV. I hope you'll enjoy the ride !",
+		"text": "Hi there ! Let's see how your computer considers images and discover the basics concepts behind computer vision. I hope you'll enjoy the ride !",
 		"question": ""
 	},
     {
@@ -72,6 +72,26 @@
 		"video_url": "",
 		"image":"s3.png",
 		"text": "Here it is ! A lighter or over exposed image with its pixel intensity histogram.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	{
+		"id": "s4",
+		"title": "",
+		"video_url": "",
+		"image":"s4.png",
+		"text": "When you evenly distribute pixel intensities accross the possible range, you get a perfectly adjusted contrast. This is great to help the computer find interesting keypoints in your image !",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	{
+		"id": "s5",
+		"title": "",
+		"video_url": "",
+		"image":"s5.png",
+		"text": "You can also look at it this way. If you get a straight line accross this figure, it means your histogram (of the previous side) is well equalized.",
 		"question": "",
 		"possible answers": [],
 		"answer": []
