@@ -15,5 +15,11 @@
 		"image":"",
 		"text": "",
 		"question": ""
+	},
+    {
+		"id": "s9",
+		"title": "Certification",
+		"image":"certificat.png",
+		"certif_ratio": 75
 	}
 ]
