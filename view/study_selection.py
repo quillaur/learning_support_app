@@ -11,7 +11,10 @@ def select_study_view(main_holder: st.empty):
     """
     # Fill the main_holder with the selectboxes.
     with main_holder.container():
-        st.title("Learning ressources")
+        # center title
+        _, col2, _ = st.columns(3)
+        with col2:
+            st.title("Learning ressources")
 
         # What studies are available ?
         col1, col2 = st.columns(2)
