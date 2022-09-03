@@ -150,9 +150,14 @@ def set_main_view(main_holder: st.empty) -> None:
 
                 # There can be several image keys.
                 elif k.startswith("image"):
-                    if not "certificat" in v:
+                    if "https" in v:
+                        st.image(v)
+                    elif not "certificat" in v:
                         img = draw_image(v)
                         st.image(img)
+                    
+                    if "source_image" in this_page and this_page["source_image"]:
+                        st.info(f"Source: {this_page['source_image']}")
                 
                 # There can be several text keys.
                 elif k.startswith("text"):
