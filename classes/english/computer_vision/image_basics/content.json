@@ -111,15 +111,15 @@
 		"title": "Convolution filtering",
 		"video_url": "",
 		"image":"https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif",
-		"source_image": "commons.wikimedia.org",
-		"text": "Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it.",
+		"source_image": "commons.wikimedia.org and en.wikipedia.org",
+		"text": "In image processing, a kernel, convolution matrix, or mask is a small matrix used for blurring, sharpening, embossing, edge detection, and more. This is accomplished by doing a convolution between the kernel and an image. The convolution filters use local neighbors to compute the weighted average, and each pixel is used multiple times by its neighbors. Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it.",
 		"question": "",
 		"possible answers": [],
 		"answer": []
 	},
 	{
 		"id": "q6",
-		"title": "",
+		"title": "Convolution filtering",
 		"video_url": "",
 		"image":"q6.png",
 		"text": "",
@@ -129,7 +129,7 @@
 	},
 	{
 		"id": "q7",
-		"title": "",
+		"title": "Convolution filtering",
 		"video_url": "",
 		"image":"q7.png",
 		"text": "",
@@ -139,23 +139,23 @@
 	},
 	{
 		"id": "q8",
-		"title": "",
+		"title": "Convolution filtering",
 		"video_url": "",
 		"image":"q8.png",
-		"text": "",
+		"text": "Reminder: the median of [0,0,2,3,5] is 2.",
 		"question": "What is the value of the pixel * after applying a median filter ?",
 		"possible answers": ["0", "10", "15", "20"],
 		"answer": ["0"]
 	},
 	{
 		"id": "q9",
-		"title": "",
+		"title": "Convolution filtering",
 		"video_url": "",
 		"image":"q8.png",
-		"text": "",
+		"text": "Reminder: the average of [0,0,2,3,7] is 2.4.",
 		"question": "What is the value of the pixel * after applying an average filter ?",
 		"possible answers": ["0", "10", "15", "20"],
-		"answer": ["0"]
+		"answer": ["10"]
 	},
 	{
 		"id": "q10",
@@ -171,6 +171,6 @@
 		"id": "s9",
 		"title": "Certification",
 		"image":"certificat.png",
-		"certif_ratio": 75
+		"certif_ratio": 50
 	}
 ]
