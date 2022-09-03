@@ -16,6 +16,16 @@
 		"text": "",
 		"question": ""
 	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "A colored pixel can only be red, green or blue.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
     {
 		"id": "q1",
 		"title": "",
@@ -95,6 +105,67 @@
 		"question": "",
 		"possible answers": [],
 		"answer": []
+	},
+	{
+		"id": "s6",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif",
+		"source_image": "commons.wikimedia.org",
+		"text": "Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	{
+		"id": "q6",
+		"title": "",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["Nothing"]
+	},
+	{
+		"id": "q7",
+		"title": "",
+		"video_url": "",
+		"image":"q7.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["It gets brighter"]
+	},
+	{
+		"id": "q8",
+		"title": "",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "",
+		"question": "What is the value of the pixel * after applying a median filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["0"]
+	},
+	{
+		"id": "q9",
+		"title": "",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "",
+		"question": "What is the value of the pixel * after applying an average filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["0"]
+	},
+	{
+		"id": "q10",
+		"title": "",
+		"video_url": "",
+		"image":"q10.png",
+		"text": "",
+		"question": "To remove impulsive noise (isolated pixels), the best filter is:",
+		"possible answers": ["gaussian", "average", "bilateral", "median"],
+		"answer": ["median"]
 	},
     {
 		"id": "s9",
