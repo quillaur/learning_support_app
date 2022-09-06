@@ -167,6 +167,11 @@
 		"possible answers": ["gaussian", "average", "bilateral", "median"],
 		"answer": ["median"]
 	},
+	{
+		"id": "s8",
+		"title": "References",
+		"image":"references.png"
+	},
     {
 		"id": "s9",
 		"title": "Certification",
