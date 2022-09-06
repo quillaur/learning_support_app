@@ -1,0 +1,80 @@
+[
+	{
+		"id": "s1",
+		"title": "",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "OpenCV",
+		"question": ""
+	},
+	{
+		"id": "s1",
+		"title": "",
+		"video_url": "",
+        "video_source": "",
+		"image":"s1.png",
+		"text": "",
+		"question": ""
+	},
+    {
+		"id": "v1",
+		"title": "OpenCV: open, show and save images",
+		"video_url": "https://www.youtube.com/watch?v=52TK_H8cjdE&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=3",
+        "video_source": "Data Magic of Sunny Kusawa(youtube)",
+		"video_start": 33,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "What is the function to read an image with OpenCV ?",
+		"possible answers": ["imshow", "imread", "imopen", "imdraw"],
+		"answer": ["imread"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "How many pixels are in an image of shape (64, 64, 3) ?",
+		"possible answers": ["64", "128", "4096", "12288"],
+		"answer": ["4096"]
+	},
+	{
+		"id": "v2",
+		"title": "OpenCV: Convert a colored image into grayscaled image",
+		"video_url": "https://www.youtube.com/watch?v=pnwd1RHgnS4&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=7",
+        "video_source": "Data Magic of Sunny Kusawa(youtube)",
+		"video_start": 31,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Select the function and the argument to use with OpenCV to convert an image from color to grayscale.",
+		"possible answers": ["cvtColor()", "imshow()", "imread()", "cv2.COLOR_BGR2GRAY", "cv2.COLOR_BGR2RGB", "cv2.COLOR_BGR2HSV"],
+		"answer": ["cvtColor()", "cv2.COLOR_BGR2GRAY"]
+	},
+	{
+		"id": "s8",
+		"title": "References",
+		"image":"references.png"
+	},
+    {
+		"id": "s9",
+		"title": "Certification",
+		"image":"certificat.png",
+		"certif_ratio": 75
+	}
+]
