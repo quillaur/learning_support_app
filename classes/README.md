@@ -23,6 +23,7 @@ The ressources.zip file contains all images referenced in the content.json file.
 | title | str | Page title |
 | video_url | str | A public URL toward a video (tested on youtube only) | 
 | video_source | str | The source of the video |
+| video_start | int | The time in seconds at which you want the video to start playing. |
 | image | str | The name or public URL toward an image |
 | source_image | str | The source of your image |
 | text | str | Some text to add on your page. If a video or an image is present, the text is shown underneath these elements. |

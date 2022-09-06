@@ -145,7 +145,12 @@ def set_main_view(main_holder: st.empty) -> None:
 
                 # 3 possible types of supports:        
                 elif k == "video_url":
-                    st.video(v)
+                    if "video_start" in this_page and this_page["video_start"]:
+                        start_time = this_page["video_start"]
+                    else:
+                        start_time = 0
+
+                    st.video(v, start_time=start_time)
                     st.info(f"Source: {this_page['video_source']}")
 
                 # There can be several image keys.
