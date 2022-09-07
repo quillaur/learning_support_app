@@ -36,6 +36,8 @@ def update_score(positif: bool) -> None:
         st.session_state["score"] += 1
     else:
         st.session_state["score"] -= 1
+    
+    st.session_state["max_score"] += 1
 
 
 def adapt_string_to_font(txt: str, myFont: ImageFont) -> str:
@@ -179,8 +181,6 @@ def set_main_view(main_holder: st.empty) -> None:
                             
                                     
                                     st.session_state["pages_done"][st.session_state["support_number"]] = True
-                        
-                        st.session_state["max_score"] += 1
 
                 
                 elif k == "certif_ratio":
