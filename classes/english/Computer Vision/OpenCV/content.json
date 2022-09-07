@@ -20,7 +20,7 @@
 		"id": "v1",
 		"title": "OpenCV: open, show and save images",
 		"video_url": "https://www.youtube.com/watch?v=52TK_H8cjdE&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=3",
-        "video_source": "Data Magic of Sunny Kusawa(youtube)",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
 		"video_start": 33,
 		"image":"",
 		"text": "",
@@ -50,7 +50,7 @@
 		"id": "v2",
 		"title": "OpenCV: Convert a colored image into grayscaled image",
 		"video_url": "https://www.youtube.com/watch?v=pnwd1RHgnS4&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=7",
-        "video_source": "Data Magic of Sunny Kusawa(youtube)",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
 		"video_start": 31,
 		"image":"",
 		"text": "",
@@ -67,6 +67,116 @@
 		"answer": ["cvtColor()", "cv2.COLOR_BGR2GRAY"]
 	},
 	{
+		"id": "v3",
+		"title": "OpenCV: Convert RGB to HSV color space",
+		"video_url": "https://www.youtube.com/watch?v=uq7IIX4Ua3g&t=18s",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "What does HSV stands for ?",
+		"possible answers": ["High", "Hue", "Volume", "Value", "Saturation", "Surface"],
+		"answer": ["Hue", "Saturation", "Value"]
+	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Which color space format is better for image area filtering ?",
+		"possible answers": ["RGB", "BGR", "Grayscale", "HSV"],
+		"answer": ["HSV"]
+	},
+	{
+		"id": "v4",
+		"title": "OpenCV: Image Masking",
+		"video_url": "https://www.youtube.com/watch?v=2KknXPT5CzA",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q6",
+		"title": "",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What is the fonction to apply a mask on an image based on a range of colors ?",
+		"possible answers": ["inRange()", "mask()", "applyRange()", "imRangeMask()"],
+		"answer": ["inRange()"]
+	},
+	{
+		"id": "q7",
+		"title": "",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What parameters do you need to pass to the inRange() function ?",
+		"possible answers": ["the image", "the low HSV value", "the RGB values", "the BGR values", "the high HSV value", "the aspect ratio"],
+		"answer": ["the image", "the low HSV value", "the high HSV value"]
+	},
+	{
+		"id": "v5",
+		"title": "OpenCV: Remove noise from image",
+		"video_url": "https://www.youtube.com/watch?v=9_XBg1Ar5WM&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=10",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "v6",
+		"title": "OpenCV: How to Crop Images",
+		"video_url": "https://www.youtube.com/watch?v=kCyD0nfMwp0&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=14",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 28,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "v7",
+		"title": "OpenCV: Resize Images",
+		"video_url": "https://www.youtube.com/watch?v=mz_pSxeJ8Oo&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=15",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 38,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q8",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "To select a subpart of an image, you need to...",
+		"possible answers": ["crop the image", "resize the image", "apply a filter", "conver to HSV"],
+		"answer": ["crop the image"]
+	},
+	{
+		"id": "q9",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Why is resizing often needed in machine learning training ?",
+		"possible answers": ["The smaller the better.", "Not to confuse the model with different sizes.", "For faster training.", "It actually is not needed to do that."],
+		"answer": ["Not to confuse the model with different sizes."]
+	},
+	{
 		"id": "s8",
 		"title": "References",
 		"image":"references.png"
@@ -75,6 +185,6 @@
 		"id": "s9",
 		"title": "Certification",
 		"image":"certificat.png",
-		"certif_ratio": 75
+		"certif_ratio": 50
 	}
 ]
