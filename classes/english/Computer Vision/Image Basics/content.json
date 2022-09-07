@@ -16,6 +16,16 @@
 		"text": "",
 		"question": ""
 	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "A colored pixel can only be red, green or blue.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
     {
 		"id": "q1",
 		"title": "",
@@ -96,10 +106,76 @@
 		"possible answers": [],
 		"answer": []
 	},
+	{
+		"id": "s6",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif",
+		"source_image": "commons.wikimedia.org and en.wikipedia.org",
+		"text": "In image processing, a kernel, convolution matrix, or mask is a small matrix used for blurring, sharpening, embossing, edge detection, and more. This is accomplished by doing a convolution between the kernel and an image. The convolution filters use local neighbors to compute the weighted average, and each pixel is used multiple times by its neighbors. Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	{
+		"id": "q6",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["Nothing"]
+	},
+	{
+		"id": "q7",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q7.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["It gets brighter"]
+	},
+	{
+		"id": "q8",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "Reminder: the median of [0,0,2,3,5] is 2.",
+		"question": "What is the value of the pixel * after applying a median filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["0"]
+	},
+	{
+		"id": "q9",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "Reminder: the average of [0,0,2,3,7] is 2.4.",
+		"question": "What is the value of the pixel * after applying an average filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["10"]
+	},
+	{
+		"id": "q10",
+		"title": "",
+		"video_url": "",
+		"image":"q10.png",
+		"text": "",
+		"question": "To remove impulsive noise (isolated pixels), the best filter is:",
+		"possible answers": ["gaussian", "average", "bilateral", "median"],
+		"answer": ["median"]
+	},
+	{
+		"id": "s8",
+		"title": "References",
+		"image":"references.png"
+	},
     {
 		"id": "s9",
 		"title": "Certification",
 		"image":"certificat.png",
-		"certif_ratio": 75
+		"certif_ratio": 50
 	}
 ]

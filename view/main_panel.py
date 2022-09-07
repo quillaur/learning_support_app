@@ -36,35 +36,8 @@ def update_score(positif: bool) -> None:
         st.session_state["score"] += 1
     else:
         st.session_state["score"] -= 1
-
-
-def reformat_study_name(study_name: str) -> str:
-    """
-    Study names are drawn from directory names.
-    By convention, I write them with underscores and no capitalization.
-    Correct this for them to be nicer to read.
-
-    Args: 
-        - study_name: name of the study taken from directory list.
-
-    Returns:
-        The capitalized study name with spaces instead of underscores. 
-    """
-    study_name = " ".join(study_name.split("_"))
-    return study_name.capitalize()
-
-def reverse_reformat(study_name: str) -> str:
-    """
-    Reverse the reformating of the previously written function (reformat_study_name).
-
-    Args: 
-        - study_name: name of the study taken from directory list.
-
-    Returns:
-        The lowered study name with underscores instead of spaces. 
-    """
-    study_name = "_".join(study_name.split(" "))
-    return study_name.lower()
+    
+    st.session_state["max_score"] += 1
 
 
 def adapt_string_to_font(txt: str, myFont: ImageFont) -> str:
@@ -88,7 +61,7 @@ def draw_certificat_info(img: Image) -> None:
     I1.text((800,230), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add study name
-    txt = adapt_string_to_font(reformat_study_name(st.session_state['selected_study']), myFont)
+    txt = adapt_string_to_font(st.session_state['selected_study'], myFont)
     I1.text((800,395), txt, font=myFont, fill=color, anchor="mm", align='center')
 
     # Add score
@@ -145,14 +118,24 @@ def set_main_view(main_holder: st.empty) -> None:
 
                 # 3 possible types of supports:        
                 elif k == "video_url":
-                    st.video(v)
+                    if "video_start" in this_page and this_page["video_start"]:
+                        start_time = this_page["video_start"]
+                    else:
+                        start_time = 0
+
+                    st.video(v, start_time=start_time)
                     st.info(f"Source: {this_page['video_source']}")
 
                 # There can be several image keys.
                 elif k.startswith("image"):
-                    if not "certificat" in v:
+                    if "https" in v:
+                        st.image(v)
+                    elif not "certificat" in v:
                         img = draw_image(v)
                         st.image(img)
+                    
+                    if "source_image" in this_page and this_page["source_image"]:
+                        st.info(f"Source: {this_page['source_image']}")
                 
                 # There can be several text keys.
                 elif k.startswith("text"):
@@ -196,7 +179,7 @@ def set_main_view(main_holder: st.empty) -> None:
                                         else:
                                             st.error(f"Sorry... The answer was: {', '.join(this_page['answer'])}")
                             
-                                    st.session_state["max_score"] += 1
+                                    
                                     st.session_state["pages_done"][st.session_state["support_number"]] = True
 
                 

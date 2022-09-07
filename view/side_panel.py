@@ -43,8 +43,7 @@ def set_side_panel_view() -> None:
     This function defines the layout of the side panel.
     """
     # The title is the name of the study.
-    study_name = " ".join(st.session_state['selected_study'].split("_"))
-    st.sidebar.title(f"{study_name.capitalize()}")
+    st.sidebar.title(st.session_state['selected_study'])
 
     # # Show the student caracteristics.
     # st.sidebar.write(f"Firstname : {st.session_state['firstname']}")
