@@ -7,6 +7,15 @@
 		"text": "Hi there ! Let's see how your computer considers images and discover the basics concepts behind computer vision. I hope you'll enjoy the ride !",
 		"question": ""
 	},
+	{
+		"id": "v3",
+		"title": "",
+		"video_url": "https://www.youtube.com/watch?v=Z-YwkZwsyRE&list=PLAwxTw4SYaPn-unAWtRMleY4peSe4OzIY&index=71",
+        "video_source": "Udacity (youtube)",
+		"image":"",
+		"text": "",
+		"question": ""
+	},
     {
 		"id": "v1",
 		"title": "",
@@ -107,6 +116,15 @@
 		"answer": []
 	},
 	{
+		"id": "v4",
+		"title": "Convolution filtering",
+		"video_url": "https://www.youtube.com/watch?v=FMbsAEjv_PQ",
+        "video_source": "CSBrain (youtube)",
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
 		"id": "s6",
 		"title": "Convolution filtering",
 		"video_url": "",
@@ -116,6 +134,15 @@
 		"question": "",
 		"possible answers": [],
 		"answer": []
+	},
+	{
+		"id": "v2",
+		"title": "Convolution filtering",
+		"video_url": "https://www.youtube.com/watch?v=WeNpd_YEF6I",
+        "video_source": "Udacity (youtube)",
+		"image":"",
+		"text": "",
+		"question": ""
 	},
 	{
 		"id": "q6",
