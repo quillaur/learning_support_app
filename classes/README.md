@@ -15,7 +15,7 @@ Inside each third level directory, there must be 2 files:
 The content.json file indicates the elements to display on each study pages.
 
 ## The certificat of completion
-TO be 
+TO be done.
 
 The ressources.zip file contains all images referenced in the content.json file.
 
