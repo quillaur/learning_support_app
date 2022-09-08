@@ -170,7 +170,7 @@
 		"video_url": "",
 		"image":"q8.png",
 		"text": "Reminder: the median of [0,0,2,3,5] is 2.",
-		"question": "What is the value of the pixel * after applying a median filter ?",
+		"question": "What is the value of the pixel * after applying a 3x3 median convolution filter ?",
 		"possible answers": ["0", "10", "15", "20"],
 		"answer": ["0"]
 	},
@@ -180,7 +180,7 @@
 		"video_url": "",
 		"image":"q8.png",
 		"text": "Reminder: the average of [0,0,2,3,7] is 2.4.",
-		"question": "What is the value of the pixel * after applying an average filter ?",
+		"question": "What is the value of the pixel * after applying an 3x3 average convolution filter ?",
 		"possible answers": ["0", "10", "15", "20"],
 		"answer": ["10"]
 	},
