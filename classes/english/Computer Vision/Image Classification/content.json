@@ -17,6 +17,56 @@
 		"text": "",
 		"question": ""
 	},
+	{
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Some of the main difficulties with classifying pictures are:",
+		"possible answers": ["Lighting conditions", "Object color", "Object orientation", "Image noise"],
+		"answer": ["Lighting conditions", "Object orientation"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Computer vision is extensively used in healthcare.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "v3",
+		"title": "Linear Classifiers for images",
+		"video_url": "https://www.youtube.com/watch?v=yCXykUpkXtY&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
+        "video_source": "Data Academy (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Using a linear model, how many weights will the model contain for classifying your image ?",
+		"possible answers": ["2", "As many as my image pixels", "As many as the length of the image", "As many as the width of the image"],
+		"answer": ["As many as my image pixels"]
+	},
+	{
+		"id": "q7",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "With a 64 x 64 image, how many weights will be trained with a linear model ?",
+		"possible answers": ["64", "128", "4097", "No way to know..."],
+		"answer": ["4097"]
+	},
     {
 		"id": "v2",
 		"title": "Image Classification with KNN",
@@ -27,55 +77,35 @@
 		"text": "",
 		"question": ""
 	},
-    {
-		"id": "v3",
-		"title": "Linear Classifiers for images",
-		"video_url": "https://www.youtube.com/watch?v=yCXykUpkXtY&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": ""
+		"question": "KNN averages the distance between the closest neighbors to find the right class.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
 	},
-    {
-		"id": "v4",
-		"title": "Logistic Regression for Image Classification",
-		"video_url": "https://www.youtube.com/watch?v=tbCe9AG2JgI&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": ""
+		"question": "How many neighbords are needed to classify images ?",
+		"possible answers": ["1", "3", "10", "it is problem specific"],
+		"answer": ["it is problem specific"]
 	},
-    {
-		"id": "v5",
-		"title": "Support Vector Machines for Image Classification",
-		"video_url": "https://www.youtube.com/watch?v=nhUq6p1hNrw&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=17",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
+	{
+		"id": "q6",
+		"title": "",
+		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": ""
-	},
-    {
-		"id": "v6",
-		"title": "Neural Networks and Deep Learning for Image Classification",
-		"video_url": "https://www.youtube.com/watch?v=F2I7Fzw-hzw&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=19",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-    {
-		"id": "v7",
-		"title": "Fully Connected Neural Network Architecture",
-		"video_url": "https://www.youtube.com/watch?v=8tE-lyK2cdA&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=20",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
+		"question": "You always need to tune hyperparameters to find the optimal k neighbors.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
 	},
     {
 		"id": "v8",
@@ -87,6 +117,16 @@
 		"text": "",
 		"question": ""
 	},
+	{
+		"id": "q8",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Convolution kernels are used to...",
+		"possible answers": ["Extract features", "Extract colors", "Reduce dimensionality", "Classify pixels"],
+		"answer": ["Extract features"]
+	},
     {
 		"id": "v9",
 		"title": "CNN Architectures",
@@ -96,6 +136,56 @@
 		"image":"",
 		"text": "",
 		"question": ""
+	},
+	{
+		"id": "q10",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "In the image processing field, CNN is the acronyme for ?",
+		"possible answers": ["Corresponding Nano Neurons", "Convolution Neural Network", "Cable News Network", "Computational National Network"],
+		"answer": ["Convolution Neural Network"]
+	},
+	{
+		"id": "q11",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "The bigger the CNN architecture, the bigger the number of weights to train is.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q12",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "The pooling layer serves as ?",
+		"possible answers": ["A dimensionality reductor", "A classifier", "A feature descriptor", "A feature detector"],
+		"answer": ["A dimensionality reductor"]
+	},
+	{
+		"id": "q13",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "When using a transfert learning strategy...",
+		"possible answers": ["the model architecture is kept.", "the convolution layer is optimized.", "the output layer is replaced.", "the fully-connected layer is replaced."],
+		"answer": ["the model architecture is kept.", "the output layer is replaced."]
+	},
+	{
+		"id": "q14",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Based on your actual knowledge, select the best CNN for image classification.",
+		"possible answers": ["VGG16", "VGG19", "ResNet50", "SVC"],
+		"answer": ["ResNet50"]
 	},
     {
         "id": "s8",
