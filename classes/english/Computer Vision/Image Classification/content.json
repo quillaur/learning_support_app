@@ -64,8 +64,8 @@
 		"image":"",
 		"text": "",
 		"question": "With a 64 x 64 image, how many weights will be trained with a linear model ?",
-		"possible answers": ["64", "128", "4097", "No way to know..."],
-		"answer": ["4097"]
+		"possible answers": ["64", "128", "4096", "No way to know..."],
+		"answer": ["4096"]
 	},
     {
 		"id": "v2",
@@ -86,6 +86,16 @@
 		"question": "KNN averages the distance between the closest neighbors to find the right class.",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "KNN looks to which class belongs the k closest neighbors to find the right class.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
 	},
 	{
 		"id": "q5",
