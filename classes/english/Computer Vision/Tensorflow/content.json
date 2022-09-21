@@ -1,0 +1,31 @@
+[
+	{
+		"id": "s1",
+		"title": "",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "Tensorflow. Enjoy !",
+		"question": ""
+	},
+    {
+		"id": "v1",
+		"title": "Introduction",
+		"video_url": "https://www.youtube.com/watch?v=bpG3gqDM80w",
+        "video_source": "The Science Asylum (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+    {
+        "id": "s8",
+        "title": "References",
+        "image":"references.png"
+    },
+    {
+        "id": "s9",
+        "title": "Certification",
+        "image":"certificat.png",
+        "certif_ratio": 50
+    }
+]
