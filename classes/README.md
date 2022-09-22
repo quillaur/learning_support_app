@@ -7,6 +7,16 @@ In this repository, you can find the different study contents available in this 
 * The second level of subdirectories indicates the category in which each study belong.
 * The third level contains the names of each available study for that category.
 
+------
+* English/
+    * category_1/
+        * study_1/
+        * study_2/
+* Français/
+    * category_1/
+        * study_1/
+        * study_2/
+------
 ## Study composition
 Inside each third level directory, there must be 2 files:
 * content.json
