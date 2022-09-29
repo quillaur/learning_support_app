@@ -10,8 +10,8 @@
     {
 		"id": "v1",
 		"title": "Introduction",
-		"video_url": "https://www.youtube.com/watch?v=S2z8dfpS4_4",
-        "video_source": "Data Academy (youtube)",
+		"video_url": "",
+        "video_source": "",
 		"video_start": 0,
 		"image":"",
 		"text": "",
@@ -26,6 +26,177 @@
 		"question": "Une déclaration est une phrase qui est soit vraie soit fausse.",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "p: 5 > 2",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "q: 5 == 2",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "r: x > 2 est une déclaration.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "s1",
+		"title": "Quelques symboles",
+		"video_url": "",
+		"image":"s1.png",
+		"text": ""
+	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"q5.png",
+		"text": "",
+		"question": "Ecris cette déclaration en symboles mathématiques.",
+		"possible answers": ["Q∨P", "P∨¬Q", "¬P∧¬Q", "P∧¬Q"],
+		"answer": ["P∧¬Q"]
+	},
+	{
+		"id": "s2",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"s2.png",
+		"text": ""
+	},
+	{
+		"id": "q6",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "Si P est vrai et Q est vrai, alors la déclaration P et Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q7",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q7.png",
+		"text": "",
+		"question": "Si P est vrai et Q est faux, alors la déclaration P et Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q8",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "",
+		"question": "Si P est faux et Q est vrai, alors la déclaration P et Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q9",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q9.png",
+		"text": "",
+		"question": "Si P est faux et Q est faux, alors la déclaration P et Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q10",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q10.png",
+		"text": "",
+		"question": "Si P est vrai et Q est vrai, alors la déclaration P ou Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q11",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q11.png",
+		"text": "",
+		"question": "Si P est vrai et Q est faux, alors la déclaration P ou Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q12",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q12.png",
+		"text": "",
+		"question": "Si P est faux et Q est faux, alors la déclaration P ou Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q13",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q13.png",
+		"text": "",
+		"question": "Si P est vrai alors neg P est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q14",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q14.png",
+		"text": "",
+		"question": "Si neg P est faux et neg Q est vrai alors neg P ou neg Q est ?",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q15",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "2 déclarations ayant la même table de vérités sont logiquement équivalentes.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q16",
+		"title": "Les tables de vérités",
+		"video_url": "",
+		"image":"q16.png",
+		"text": "",
+		"question": "neg (P ou Q) == neg P et neg Q",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "s3",
+		"title": "Les booléens",
+		"video_url": "",
+		"image":"s3.png",
+		"text": ""
 	},
     {
         "id": "s8",
