@@ -7,6 +7,7 @@ def select_study_view(main_holder: st.empty):
     """
     This function defines the layout of the page to select a study in the app.
     """
+
     # Fill the main_holder with the selectboxes.
     with main_holder.container():
         # center title
@@ -20,8 +21,8 @@ def select_study_view(main_holder: st.empty):
             # Show a welcomy image
             st.image("view/love_to_learn_and_teach.jpg")
             
-        with col2:
-            # Filter by language first.
+        with col2:            
+            # Filter by language first.    
             selected_language = st.selectbox("Language:", [d for d in listdir("classes/") if isdir(join("classes/", d))])
             language_path = join("classes", selected_language)
             # Then filter by category.
