@@ -1,0 +1,41 @@
+[
+	{
+		"id": "s1",
+		"title": "",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "Vous apprendrez ici à utiliser des éléments de logique mathématique afin de pouvoir suivre au mieux des opérations booléennes dans des programmes informatiques. Enjoy !",
+		"question": ""
+	},
+    {
+		"id": "v1",
+		"title": "Introduction",
+		"video_url": "https://www.youtube.com/watch?v=S2z8dfpS4_4",
+        "video_source": "Data Academy (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
+	},
+    {
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Une déclaration est une phrase qui est soit vraie soit fausse.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+    {
+        "id": "s8",
+        "title": "References",
+        "image":"references.png"
+    },
+    {
+        "id": "s9",
+        "title": "Certification",
+        "image":"certificat.png",
+        "certif_ratio": 50
+    }
+]
