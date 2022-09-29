@@ -9,13 +9,20 @@
 	},
     {
 		"id": "v1",
-		"title": "Introduction",
-		"video_url": "",
-        "video_source": "",
+		"title": "Introduction: les booléens",
+		"video_url": "https://www.youtube.com/watch?v=Gp1zryfkHjs",
+        "video_source": "fadagogo.com-codage (youtube)",
 		"video_start": 0,
 		"image":"",
 		"text": "",
 		"question": ""
+	},
+	{
+		"id": "s3",
+		"title": "Les booléens",
+		"video_url": "",
+		"image":"s3.png",
+		"text": "En informatiques on parle de booléens, alors qu'en mathématiques, on parle de propositions."
 	},
     {
 		"id": "q1",
@@ -23,7 +30,7 @@
 		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": "Une déclaration est une phrase qui est soit vraie soit fausse.",
+		"question": "Une proposition est une phrase qui est soit vraie soit fausse.",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -53,7 +60,7 @@
 		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": "r: x > 2 est une déclaration.",
+		"question": "r: x > 2 est une proposition.",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
@@ -70,7 +77,7 @@
 		"video_url": "",
 		"image":"q5.png",
 		"text": "",
-		"question": "Ecris cette déclaration en symboles mathématiques.",
+		"question": "Ecris cette proposition en symboles mathématiques.",
 		"possible answers": ["Q∨P", "P∨¬Q", "¬P∧¬Q", "P∧¬Q"],
 		"answer": ["P∧¬Q"]
 	},
@@ -87,7 +94,7 @@
 		"video_url": "",
 		"image":"q6.png",
 		"text": "",
-		"question": "Si P est vrai et Q est vrai, alors la déclaration P et Q est ?",
+		"question": "Si P est vrai et Q est vrai, alors la proposition P et Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -97,7 +104,7 @@
 		"video_url": "",
 		"image":"q7.png",
 		"text": "",
-		"question": "Si P est vrai et Q est faux, alors la déclaration P et Q est ?",
+		"question": "Si P est vrai et Q est faux, alors la proposition P et Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -107,7 +114,7 @@
 		"video_url": "",
 		"image":"q8.png",
 		"text": "",
-		"question": "Si P est faux et Q est vrai, alors la déclaration P et Q est ?",
+		"question": "Si P est faux et Q est vrai, alors la proposition P et Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
@@ -117,7 +124,7 @@
 		"video_url": "",
 		"image":"q9.png",
 		"text": "",
-		"question": "Si P est faux et Q est faux, alors la déclaration P et Q est ?",
+		"question": "Si P est faux et Q est faux, alors la proposition P et Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
@@ -127,7 +134,7 @@
 		"video_url": "",
 		"image":"q10.png",
 		"text": "",
-		"question": "Si P est vrai et Q est vrai, alors la déclaration P ou Q est ?",
+		"question": "Si P est vrai et Q est vrai, alors la proposition P ou Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -137,7 +144,7 @@
 		"video_url": "",
 		"image":"q11.png",
 		"text": "",
-		"question": "Si P est vrai et Q est faux, alors la déclaration P ou Q est ?",
+		"question": "Si P est vrai et Q est faux, alors la proposition P ou Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -147,7 +154,7 @@
 		"video_url": "",
 		"image":"q12.png",
 		"text": "",
-		"question": "Si P est faux et Q est faux, alors la déclaration P ou Q est ?",
+		"question": "Si P est faux et Q est faux, alors la proposition P ou Q est ?",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
@@ -177,7 +184,7 @@
 		"video_url": "",
 		"image":"",
 		"text": "",
-		"question": "2 déclarations ayant la même table de vérités sont logiquement équivalentes.",
+		"question": "2 propositions ayant la même table de vérités sont logiquement équivalentes.",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -192,11 +199,14 @@
 		"answer": ["True"]
 	},
 	{
-		"id": "s3",
-		"title": "Les booléens",
-		"video_url": "",
-		"image":"s3.png",
-		"text": ""
+		"id": "v2",
+		"title": "Les implications",
+		"video_url": "https://www.youtube.com/watch?v=WdCKVssbtdU",
+        "video_source": "Les Bons Profs SUP (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": "",
+		"question": ""
 	},
     {
         "id": "s8",
