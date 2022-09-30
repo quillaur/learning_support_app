@@ -37,6 +37,6 @@ def select_study_view():
         if select:
             st.session_state["selected_study"] = selected_study
             st.session_state["study_path"] = join(category_path, selected_study)
-            st.session_state["support_number"] = 0
+            st.session_state["score"] = 0
 
     

@@ -1,3 +1,4 @@
+from requests import session
 import streamlit as st
 
 # from view.main_panel import set_main_view
@@ -9,4 +10,6 @@ from view.study_selection import select_study_view
 st.set_page_config("Learning app", layout="wide")
 
 select_study_view()
-set_main_view()
+
+if "study_path" in st.session_state.keys():
+    set_main_view()
