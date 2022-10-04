@@ -42,7 +42,7 @@ def draw_image(image_name: str) -> Image:
     # Images are all compressed in a zip file names 'ressources.zip'.
     resc_path = join(st.session_state["study_path"], "ressources.zip")
     with ZipFile(resc_path, "r") as myzip:
-        with myzip.open(f"{image_name}") as img_file:
+        with myzip.open(f"ressources/{image_name}") as img_file:
             img = Image.open(img_file)
             img.load()
 
@@ -203,7 +203,7 @@ def set_main_view() -> None:
                 set_certificat_view()
             else:
                 this_page = st.session_state["content"][tab_title]
-                col1, col2 = st.columns(2, gap="large")
+                col1, col2 = st.columns([2,3], gap="large")
                 with col1:
                     st.title(tab_title)
                     # If there is a value for this element, 
