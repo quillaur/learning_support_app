@@ -1,372 +1,72 @@
-[
-	{
-		"id": "s1",
-		"title": "",
+{
+	"Introduction": {
 		"video_url": "",
+		"video_source": "",
+		"video_start": 0,
 		"image":"course_img.png",
-		"text": "Let's learn the basics of python ! Here you will learn about python variable types, conditional statements, data structures and loops. To do this, I will use various youtube channels, slides and interactive questions. Let's get started !",
-		"question": ""
+		"source_image": "",
+		"text": "Let's learn the basics of python ! Here you will learn about python variable types, conditional statements, data structures and loops. To do this, I will use various youtube channels, slides and interactive questions. Let's get started !"
 	},
-	{
-		"id": "s2",
-		"title": "Hello world",
+	"Hello world": {
 		"video_url": "https://www.youtube.com/watch?v=KOdfpbnWLVo&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=2",
 		"video_source": "Socratica (youtube)",
-		"text": "",
+		"video_start": 0,
+		"text": "Learn how to open python and print your first message with this animated video.",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "s9",
-		"title": "Variables",
+	"Variables": {
 		"video_url": "https://www.youtube.com/watch?v=OH86oLzVzzw",
 		"video_source": "DataCamp (youtube)",
+		"video_start": 0,
 		"text": "",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "q1",
-		"title": "Variables",
-		"video_url": "",
-		"text": "a = '50'",
-		"image":"",
-		"question": "What is the type of the variable ?",
-		"possible answers": ["str", "int", "list", "float"],
-		"answer": ["str"]
-	},
-	{
-		"id": "q2",
-		"title": "Variables",
-		"video_url": "",
-		"text": "a = 50",
-		"image":"",
-		"question": "What is the type of the variable ?",
-		"possible answers": ["str", "int", "list", "float"],
-		"answer": ["int"]
-	},
-	{
-		"id": "q3",
-		"title": "Variables",
-		"video_url": "",
-		"text": "a = 50.0",
-		"image":"",
-		"question": "What is the type of the variable ?",
-		"possible answers": ["str", "int", "list", "float"],
-		"answer": ["float"]
-	},
-	{
-		"id": "q4",
-		"title": "Show a message",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "To show a message on the terminal, we use :",
-		"possible answers": ["scanf", "print", "input", "logging"],
-		"answer": ["print"]
-	},
-	{
-		"id": "q5",
-		"title": "Operations",
-		"video_url": "",
-		"text": "",
-		"image":"q5.png",
-		"question": "What is this code output ?",
-		"possible answers": ["b + a", "Salut", "lutSa", "Error"],
-		"answer": ["lutSa"]
-	},
-	{
-		"id": "q6",
-		"title": "Operations",
-		"video_url": "",
-		"text": "",
-		"image":"q6.png",
-		"question": "What is this code output ?",
-		"possible answers": ["12*4", "48", "48.0", "Error"],
-		"answer": ["12*4"]
-	},
-	{
-		"id": "q7",
-		"title": "Operations",
-		"video_url": "",
-		"text": "",
-		"image":"q7.png",
-		"question": "What is this code output ?",
-		"possible answers": ["5", "32", "3+2", "Error"],
-		"answer": ["Error"]
-	},
-	{
-		"id": "q8",
-		"title": "Operations",
-		"video_url": "",
-		"text": "",
-		"image":"q8.png",
-		"question": "What is this code output ?",
-		"possible answers": ["5", "32", "3+2", "Error"],
-		"answer": ["5"]
-	},
-	{
-		"id": "q9",
-		"title": "Operations",
-		"video_url": "",
-		"text": "",
-		"image":"q9.png",
-		"question": "What is this code output ?",
-		"possible answers": ["5", "32", "3+2", "Error"],
-		"answer": ["32"]
-	},
-	{
-		"id": "s3",
-		"title": "Conditional statements",
+	"Conditional statements": {
 		"video_url": "https://www.youtube.com/watch?v=f4KOjWS_KZs",
 		"video_source": "Socratica (youtube)",
+		"video_start": 0,
 		"text": "Note: it is now preferable to use input() instead of raw_input() in python 3.",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "q10",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "Which method can you use to get a user input ?",
-		"possible answers": ["print", "get", "input", "read"],
-		"answer": ["input"]
-	},
-	{
-		"id": "q11",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "What is the type of variable returned by the input method ?",
-		"possible answers": ["str", "int", "auto", "float"],
-		"answer": ["str"]
-	},
-	{
-		"id": "q12",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "Which operator do you use to test if x is any number other than 6 ?",
-		"possible answers": ["==", "=", "<>", "!="],
-		"answer": ["!="]
-	},
-	{
-		"id": "q13",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "What is the keyword to tell python 'Else if' ?",
-		"possible answers": ["else if", "elif", "elseif", "if"],
-		"answer": ["elif"]
-	},
-	{
-		"id": "q14",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"q14.png",
-		"question": "What is the output of this code ?",
-		"possible answers": ["The variables are equal", "They are not equal", "Nothing", "Error"],
-		"answer": ["The variables are equal"]
-	},
-	{
-		"id": "q15",
-		"title": "Conditional statements",
-		"video_url": "",
-		"text": "",
-		"image":"q15.png",
-		"question": "This code outputs 'I can go !'.",
-		"possible answers": ["True", "False", "Maybe", "We cannot know"],
-		"answer": ["False"]
-	},
-	{
-		"id": "s4",
-		"title": "Lists",
+	"Lists": {
 		"video_url": "https://www.youtube.com/watch?v=ohCDWZgNIU0&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=14",
 		"video_source": "Socratica (youtube)",
+		"video_start": 0,
 		"text": "",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "q16",
-		"title": "Lists",
-		"video_url": "",
-		"text": "",
-		"image":"q16.png",
-		"question": "What does this code output ?",
-		"possible answers": ["banana", "pear", "chocolat", "Error"],
-		"answer": ["pear"]
-	},
-	{
-		"id": "q17",
-		"title": "Lists",
-		"video_url": "",
-		"text": "",
-		"image":"q17.png",
-		"question": "What does this code output ?",
-		"possible answers": ["banana", "pear", "chocolat", "Error"],
-		"answer": ["Error"]
-	},
-	{
-		"id": "q18",
-		"title": "Lists",
-		"video_url": "",
-		"text": "",
-		"image":"q18.png",
-		"question": "What does this code output ?",
-		"possible answers": ["banana", "pear", "chocolat", "Error"],
-		"answer": ["banana"]
-	},
-	{
-		"id": "q19",
-		"title": "Lists",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "The elements of a list must all be of the same type.",
-		"possible answers": ["True", "False", "Maybe", "True and False"],
-		"answer": ["False"]
-	},
-	{
-		"id": "q23",
-		"title": "Lists",
-		"video_url": "",
-		"text": "",
-		"image":"q23.png",
-		"question": "What does this code output ?",
-		"possible answers": ["Good job !", "Too bad...", "Nothing", "Error"],
-		"answer": ["Too bad..."]
-	},
-	{
-		"id": "s5",
-		"title": "Dictionnaries",
+	"Dictionnaries": {
 		"video_url": "https://www.youtube.com/watch?v=XCcpzWs-CI4&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=15",
 		"video_source": "Socratica (youtube)",
+		"video_start": 0,
 		"text": "Note: in a recent python update, dictionnaries keep track of the order in which you inserted keys.",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "q20",
-		"title": "Dictionnaries",
-		"video_url": "",
-		"text": "",
-		"image":"q20.png",
-		"question": "What does this code output ?",
-		"possible answers": ["name", "age", "pseudo", "Error"],
-		"answer": ["Error"]
-	},
-	{
-		"id": "q21",
-		"title": "Dictionnaries",
-		"video_url": "",
-		"text": "",
-		"image":"q21.png",
-		"question": "What does this code output ?",
-		"possible answers": ["M", 22, "Johny", "Error"],
-		"answer": ["Johny"]
-	},
-	{
-		"id": "q22",
-		"title": "Dictionnaries",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "Which method allows you to loop through all keys and values of a dictionnary ?",
-		"possible answers": ["pair", "keys", "get", "items"],
-		"answer": ["items"]
-	},
-	{
-		"id": "s6",
-		"title": "Loops",
+	"Loops": {
 		"video_url": "https://www.youtube.com/watch?v=9ueMumuFv6g",
 		"video_source": "Programming with Mosh (youtube)",
+		"video_start": 0,
 		"text": "",
 		"image":"",
-		"question": ""
+		"source_image": ""
 	},
-	{
-		"id": "q24",
-		"title": "Loops",
+	"Range loop": {
 		"video_url": "",
-		"text": "l = ['John', 'Peter', 'Paul']",
-		"image":"",
-		"question": "What is the syntax to iterate over this list ?",
-		"possible answers": ["for e in l:", "while l", "with e in l", "for(e, l, e++):"],
-		"answer": ["for e in l:"]
-	},
-	{
-		"id": "q25",
-		"title": "Loops",
-		"video_url": "",
-		"text": "",
-		"image":"",
-		"question": "What is being returned by the enumerate() fonction ?",
-		"possible answers": ["value", "indice", "tuple", "dictionnary"],
-		"answer": ["value", "indice", "tuple"]
-	},
-	{
-		"id": "s6",
-		"title": "Range loop",
-		"video_url": "",
+		"video_source": "Programming with Mosh (youtube)",
+		"video_start": 0,
 		"text": "A very common loop to do is a range loop. It will create as many loop cycles as indicated in the range fonction. Here is an exemple:",
 		"image":"s6.png",
 		"text1": "Note: the number in the range parenthesis indicates the number of loop cycles that you want. Count the number of times the variable i was printed on the screen and you will see that it is exaclty what happened.",
-		"question": ""
+		"text2": "You also be more specific by indicating the start, the end and the step of the desired loop. Here is an exemple:",
+		"image1":"s7.png",
+		"source_image": ""
 	},
-	{
-		"id": "s7",
-		"title": "Range loop",
-		"video_url": "",
-		"text": "You also be more specific by indicating the start, the end and the step of the desired loop. Here is an exemple:",
-		"image":"s7.png",
-		"question": ""
-	},
-	{
-		"id": "q26",
-		"title": "Loops",
-		"video_url": "",
-		"text": "",
-		"image":"q26.png",
-		"question": "What does this code output ?",
-		"possible answers": ["51 7", "3 51 7", "3 51 7 4", "Error"],
-		"answer": ["Error"]
-	},
-	{
-		"id": "q27",
-		"title": "Loops",
-		"video_url": "",
-		"text": "",
-		"image":"q27.png",
-		"question": "What does this code output ?",
-		"possible answers": ["51 7", "3 51 7", "3 51 7 4", "Error"],
-		"answer": ["51 7"]
-	},
-	{
-		"id": "q28",
-		"title": "Loops",
-		"video_url": "",
-		"text": "",
-		"image":"q28.png",
-		"question": "What does this code output ?",
-		"possible answers": ["3 51 7 4", "3 51 7", "3 51 7 3 51 7", "Error"],
-		"answer": ["3 51 7 3 51 7"]
-	},
-	{
-		"id": "s8",
-		"title": "References",
+	"References": {
 		"image":"references.png"
-	},
-	{
-		"id": "s9",
-		"title": "Certification",
-		"image":"certificat.png",
-		"certif_ratio": 75
 	}
-]
+}
