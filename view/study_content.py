@@ -72,11 +72,23 @@ def show_question(q: dict):
                 elif k == "question":
                     st.write(v)
     with col2:
-        answer_count = len(['answer'])
-        if answer_count > 1:
-            st.multiselect("Your answer(s): (several answers are possible)", options=q["possible answers"], default=None, key=q["id"])
+        if "quiz has been submitted" in st.session_state and st.session_state["quiz has been submitted"]:
+            v = st.session_state[q["id"]]
+            if isinstance(v, list):
+                v.sort()
+                q["answer"].sort()
+                if q["answer"] == v:
+                    st.success("Good answer ! Well done !")
+            elif q["answer"][0] == v:
+                st.success(f"{v} is the right answer ! Well done !")
+            else:
+                st.error(f"Oups... you answered {v} and the answer was: {', '.join(q['answer'])}")
         else:
-            st.radio("Your answer:", options=[None]+q["possible answers"], key=q["id"])
+            answer_count = len(['answer'])
+            if answer_count > 1:
+                st.multiselect("Your answer(s): (several answers are possible)", options=q["possible answers"], default=None, key=q["id"])
+            else:
+                st.radio("Your answer:", options=[None]+q["possible answers"], key=q["id"])
             
     st.write("-----------------")
 
@@ -91,17 +103,16 @@ def set_quiz_view():
         for q in questions:
             show_question(q)
         
-        submit = st.form_submit_button()
-        if submit:
+        st.session_state["quiz has been submitted"] = st.form_submit_button()
+        if st.session_state["quiz has been submitted"]:
             good_answer = 0
             max_points = len(questions)
             for q in questions:
-                q["answer"].sort()
-
                 for k, v in st.session_state.items():
                     if k == q["id"]:
                         if isinstance(v, list):
                             v.sort()
+                            q["answer"].sort()
                             if q["answer"] == v:
                                 good_answer += 1
                         elif q["answer"][0] == v:
@@ -110,6 +121,7 @@ def set_quiz_view():
             st.session_state["score"] = ceil(good_answer / max_points * 100)
 
             st.info("Click on the certificat tab to see your final score !")
+            st.experimental_rerun()
 
 @st.cache()
 def prep_certif_for_download(img: Image) -> bytes:
