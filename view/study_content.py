@@ -134,7 +134,7 @@ def set_certificat_view():
     if st.session_state["score"] == 0:
         st.info("You need to submit your answers to the quiz to get a certificat of completion.") 
     elif st.session_state["score"] < 50:
-        st.error(f"Your score: {st.session_state['score']*100} / 100")
+        st.error(f"Your score: {st.session_state['score']} / 100")
         st.warning("Sorry, you did not score high enough to get this certification.")
         st.info("Feel free to retry anytime !")
     else:
