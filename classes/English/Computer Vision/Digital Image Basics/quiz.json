@@ -1,0 +1,102 @@
+[
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "A colored pixel can only be red, green or blue.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+    {
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"q1.png",
+		"text": "Where a colored image would have 3 numbers per pixel, a grayscale one only has 1 number per pixel: the gray intensity.",
+		"question": "What is the coordinate of the pixel value 243 ?",
+		"possible answers": ["0:0", "2:1", "3:1", "1:3"],
+		"answer": ["2:1"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"q1.png",
+		"text": "",
+		"question": "What is the pixel quantification of a grayscaled image ?",
+		"possible answers": ["256", "255", "768", "No way to know !"],
+		"answer": ["256"]
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"q3.png",
+		"text": "",
+		"question": "If I substract 50% to all pixel intensities, the image becomes: ",
+		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
+		"answer": ["darker", "under exposed"]
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"q3.png",
+		"text": "",
+		"question": "If I add 50% to all pixel intensities, the image becomes: ",
+		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
+		"answer": ["lighter", "over exposed"]
+	},
+	{
+		"id": "q6",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["Nothing"]
+	},
+	{
+		"id": "q7",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q7.png",
+		"text": "",
+		"question": "What happens if you apply this convolution kernel to an image ?",
+		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
+		"answer": ["It gets brighter"]
+	},
+	{
+		"id": "q8",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "Reminder: the median of [0,0,2,3,5] is 2.",
+		"question": "What is the value of the pixel * after applying a 3x3 median convolution filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["0"]
+	},
+	{
+		"id": "q9",
+		"title": "Convolution filtering",
+		"video_url": "",
+		"image":"q8.png",
+		"text": "Reminder: the average of [0,0,2,3,7] is 2.4.",
+		"question": "What is the value of the pixel * after applying an 3x3 average convolution filter ?",
+		"possible answers": ["0", "10", "15", "20"],
+		"answer": ["10"]
+	},
+	{
+		"id": "q10",
+		"title": "",
+		"video_url": "",
+		"image":"q10.png",
+		"text": "",
+		"question": "To remove impulsive noise (isolated pixels), the best filter is:",
+		"possible answers": ["gaussian", "average", "bilateral", "median"],
+		"answer": ["median"]
+	}
+]

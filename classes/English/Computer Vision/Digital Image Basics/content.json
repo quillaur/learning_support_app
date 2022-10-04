@@ -1,208 +1,52 @@
-[
-	{
+{
+	"Introduction": {
 		"id": "s1",
-		"title": "",
 		"video_url": "",
 		"image":"course_img.png",
-		"text": "Hi there ! Let's see how your computer considers images and discover the basics concepts behind computer vision. I hope you'll enjoy the ride !",
-		"question": ""
+		"text": "Hi there ! Let's see how your computer considers images and discover the basics concepts behind computer vision. I hope you'll enjoy the ride !"
 	},
-	{
+	"A digital image": {
 		"id": "v3",
-		"title": "",
 		"video_url": "https://www.youtube.com/watch?v=Z-YwkZwsyRE&list=PLAwxTw4SYaPn-unAWtRMleY4peSe4OzIY&index=71",
         "video_source": "Udacity (youtube)",
 		"image":"",
-		"text": "",
-		"question": ""
+		"text": ""
 	},
-    {
+    "Pixel notions": {
 		"id": "v1",
-		"title": "",
 		"video_url": "https://www.youtube.com/watch?v=15aqFQQVBWU",
         "video_source": "Code.org (youtube)",
 		"image":"",
-		"text": "",
-		"question": ""
+		"text": ""
 	},
-	{
-		"id": "q5",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "A colored pixel can only be red, green or blue.",
-		"possible answers": ["True", "False"],
-		"answer": ["False"]
-	},
-    {
-		"id": "q1",
-		"title": "",
-		"video_url": "",
-		"image":"q1.png",
-		"text": "Where a colored image would have 3 numbers per pixel, a grayscale one only has 1 number per pixel: the gray intensity.",
-		"question": "What is the coordinate of the pixel value 243 ?",
-		"possible answers": ["0:0", "2:1", "3:1", "1:3"],
-		"answer": ["2:1"]
-	},
-	{
-		"id": "q2",
-		"title": "",
-		"video_url": "",
-		"image":"q1.png",
-		"text": "",
-		"question": "What is the pixel quantification of a grayscaled image ?",
-		"possible answers": ["256", "255", "768", "No way to know !"],
-		"answer": ["256"]
-	},
-	{
-		"id": "q3",
-		"title": "",
-		"video_url": "",
-		"image":"q3.png",
-		"text": "",
-		"question": "If I substract 50% to all pixel intensities, the image becomes: ",
-		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
-		"answer": ["darker", "under exposed"]
-	},
-	{
+	"Image histogram": {
 		"id": "s2",
 		"title": "",
 		"video_url": "",
 		"image":"s2.png",
+		"image1":"q3.png",
+		"image2":"s4.png",
+		"image3":"s5.png",
 		"text": "Here it is ! A darker or under exposed image with its pixel intensity histogram.",
+		"text1": "Here it is ! A lighter or over exposed image with its pixel intensity histogram.",
+		"text2": "When you evenly distribute pixel intensities accross the possible range, you get a perfectly adjusted contrast. This is great to help the computer find interesting keypoints in your image !",
+		"text3": "You can also look at it this way. If you get a straight line accross this figure, it means your histogram (of the previous side) is well equalized.",
 		"question": "",
 		"possible answers": [],
 		"answer": []
 	},
-	{
-		"id": "q4",
-		"title": "",
-		"video_url": "",
-		"image":"q3.png",
-		"text": "",
-		"question": "If I add 50% to all pixel intensities, the image becomes: ",
-		"possible answers": ["darker", "lighter", "under exposed", "over exposed", "contrast adjusted"],
-		"answer": ["lighter", "over exposed"]
-	},
-	{
-		"id": "s3",
-		"title": "",
-		"video_url": "",
-		"image":"s3.png",
-		"text": "Here it is ! A lighter or over exposed image with its pixel intensity histogram.",
-		"question": "",
-		"possible answers": [],
-		"answer": []
-	},
-	{
-		"id": "s4",
-		"title": "",
-		"video_url": "",
-		"image":"s4.png",
-		"text": "When you evenly distribute pixel intensities accross the possible range, you get a perfectly adjusted contrast. This is great to help the computer find interesting keypoints in your image !",
-		"question": "",
-		"possible answers": [],
-		"answer": []
-	},
-	{
-		"id": "s5",
-		"title": "",
-		"video_url": "",
-		"image":"s5.png",
-		"text": "You can also look at it this way. If you get a straight line accross this figure, it means your histogram (of the previous side) is well equalized.",
-		"question": "",
-		"possible answers": [],
-		"answer": []
-	},
-	{
+	"Convolution filtering": {
 		"id": "v4",
-		"title": "Convolution filtering",
 		"video_url": "https://www.youtube.com/watch?v=FMbsAEjv_PQ",
+		"video_url1": "https://www.youtube.com/watch?v=WeNpd_YEF6I",
         "video_source": "CSBrain (youtube)",
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
-		"id": "s6",
-		"title": "Convolution filtering",
-		"video_url": "",
+		"video_source1": "Udacity (youtube)",
 		"image":"https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif",
 		"source_image": "commons.wikimedia.org and en.wikipedia.org",
-		"text": "In image processing, a kernel, convolution matrix, or mask is a small matrix used for blurring, sharpening, embossing, edge detection, and more. This is accomplished by doing a convolution between the kernel and an image. The convolution filters use local neighbors to compute the weighted average, and each pixel is used multiple times by its neighbors. Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it.",
-		"question": "",
-		"possible answers": [],
-		"answer": []
+		"text": "In image processing, a kernel, convolution matrix, or mask is a small matrix used for blurring, sharpening, embossing, edge detection, and more. This is accomplished by doing a convolution between the kernel and an image. The convolution filters use local neighbors to compute the weighted average, and each pixel is used multiple times by its neighbors. Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it."
 	},
-	{
-		"id": "v2",
-		"title": "Convolution filtering",
-		"video_url": "https://www.youtube.com/watch?v=WeNpd_YEF6I",
-        "video_source": "Udacity (youtube)",
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
-		"id": "q6",
-		"title": "Convolution filtering",
-		"video_url": "",
-		"image":"q6.png",
-		"text": "",
-		"question": "What happens if you apply this convolution kernel to an image ?",
-		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
-		"answer": ["Nothing"]
-	},
-	{
-		"id": "q7",
-		"title": "Convolution filtering",
-		"video_url": "",
-		"image":"q7.png",
-		"text": "",
-		"question": "What happens if you apply this convolution kernel to an image ?",
-		"possible answers": ["It gets blurier", "It gets brighter", "Nothing", "It gets clearer"],
-		"answer": ["It gets brighter"]
-	},
-	{
-		"id": "q8",
-		"title": "Convolution filtering",
-		"video_url": "",
-		"image":"q8.png",
-		"text": "Reminder: the median of [0,0,2,3,5] is 2.",
-		"question": "What is the value of the pixel * after applying a 3x3 median convolution filter ?",
-		"possible answers": ["0", "10", "15", "20"],
-		"answer": ["0"]
-	},
-	{
-		"id": "q9",
-		"title": "Convolution filtering",
-		"video_url": "",
-		"image":"q8.png",
-		"text": "Reminder: the average of [0,0,2,3,7] is 2.4.",
-		"question": "What is the value of the pixel * after applying an 3x3 average convolution filter ?",
-		"possible answers": ["0", "10", "15", "20"],
-		"answer": ["10"]
-	},
-	{
-		"id": "q10",
-		"title": "",
-		"video_url": "",
-		"image":"q10.png",
-		"text": "",
-		"question": "To remove impulsive noise (isolated pixels), the best filter is:",
-		"possible answers": ["gaussian", "average", "bilateral", "median"],
-		"answer": ["median"]
-	},
-	{
+	"References": {
 		"id": "s8",
-		"title": "References",
 		"image":"references.png"
-	},
-    {
-		"id": "s9",
-		"title": "Certification",
-		"image":"certificat.png",
-		"certif_ratio": 50
 	}
-]
+}
