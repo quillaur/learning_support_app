@@ -1,0 +1,75 @@
+{
+	"OpenCV": {
+		"id": "s0",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "In this study, you will learn to play with basic digital image contcepts using OpenCV. Enjoy !"
+	},
+	"Introduction": {
+		"id": "s1",
+		"video_url": "",
+        "video_source": "",
+		"image":"s1.png",
+		"text": ""
+	},
+    "Open, show and save images": {
+		"id": "v1",
+		"video_url": "https://www.youtube.com/watch?v=52TK_H8cjdE&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=3",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 33,
+		"image":"",
+		"text": ""
+	},
+	"Convert into grayscale": {
+		"id": "v2",
+		"video_url": "https://www.youtube.com/watch?v=pnwd1RHgnS4&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=7",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 31,
+		"image":"",
+		"text": ""
+	},
+	"Convert to HSV": {
+		"id": "v3",
+		"video_url": "https://www.youtube.com/watch?v=uq7IIX4Ua3g&t=18s",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": ""
+	},
+	"Image Masking": {
+		"id": "v4",
+		"video_url": "https://www.youtube.com/watch?v=2KknXPT5CzA",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": ""
+	},
+	"Remove noise": {
+		"id": "v5",
+		"video_url": "https://www.youtube.com/watch?v=9_XBg1Ar5WM&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=10",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 0,
+		"image":"",
+		"text": ""
+	},
+	"Crop Images": {
+		"id": "v6",
+		"video_url": "https://www.youtube.com/watch?v=kCyD0nfMwp0&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=14",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 28,
+		"image":"",
+		"text": ""
+	},
+	"Resize Images": {
+		"id": "v7",
+		"video_url": "https://www.youtube.com/watch?v=mz_pSxeJ8Oo&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=15",
+        "video_source": "Data Magic of Sunny Kusawa (youtube)",
+		"video_start": 38,
+		"image":"",
+		"text": ""
+	},
+	"References": {
+		"id": "s8",
+		"image":"references.png"
+	}
+}

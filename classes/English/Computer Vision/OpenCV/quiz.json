@@ -1,32 +1,5 @@
 [
 	{
-		"id": "s1",
-		"title": "",
-		"video_url": "",
-		"image":"course_img.png",
-		"text": "In this study, you will learn to play with basic digital image contcepts using OpenCV. Enjoy !",
-		"question": ""
-	},
-	{
-		"id": "s1",
-		"title": "",
-		"video_url": "",
-        "video_source": "",
-		"image":"s1.png",
-		"text": "",
-		"question": ""
-	},
-    {
-		"id": "v1",
-		"title": "OpenCV: open, show and save images",
-		"video_url": "https://www.youtube.com/watch?v=52TK_H8cjdE&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=3",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 33,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
 		"id": "q1",
 		"title": "",
 		"video_url": "",
@@ -47,16 +20,6 @@
 		"answer": ["4096"]
 	},
 	{
-		"id": "v2",
-		"title": "OpenCV: Convert a colored image into grayscaled image",
-		"video_url": "https://www.youtube.com/watch?v=pnwd1RHgnS4&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=7",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 31,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
 		"id": "q3",
 		"title": "",
 		"video_url": "",
@@ -65,16 +28,6 @@
 		"question": "Select the function and the argument to use with OpenCV to convert an image from color to grayscale.",
 		"possible answers": ["cvtColor()", "imshow()", "imread()", "cv2.COLOR_BGR2GRAY", "cv2.COLOR_BGR2RGB", "cv2.COLOR_BGR2HSV"],
 		"answer": ["cvtColor()", "cv2.COLOR_BGR2GRAY"]
-	},
-	{
-		"id": "v3",
-		"title": "OpenCV: Convert RGB to HSV color space",
-		"video_url": "https://www.youtube.com/watch?v=uq7IIX4Ua3g&t=18s",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
 	},
 	{
 		"id": "q4",
@@ -97,16 +50,6 @@
 		"answer": ["HSV"]
 	},
 	{
-		"id": "v4",
-		"title": "OpenCV: Image Masking",
-		"video_url": "https://www.youtube.com/watch?v=2KknXPT5CzA",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
 		"id": "q6",
 		"title": "",
 		"video_url": "",
@@ -127,36 +70,6 @@
 		"answer": ["the image", "the low HSV value", "the high HSV value"]
 	},
 	{
-		"id": "v5",
-		"title": "OpenCV: Remove noise from image",
-		"video_url": "https://www.youtube.com/watch?v=9_XBg1Ar5WM&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=10",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
-		"id": "v6",
-		"title": "OpenCV: How to Crop Images",
-		"video_url": "https://www.youtube.com/watch?v=kCyD0nfMwp0&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=14",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 28,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
-		"id": "v7",
-		"title": "OpenCV: Resize Images",
-		"video_url": "https://www.youtube.com/watch?v=mz_pSxeJ8Oo&list=PLTmQbi1PYZ_GrjMHiGCYa0WyDZfxu-yTz&index=15",
-        "video_source": "Data Magic of Sunny Kusawa (youtube)",
-		"video_start": 38,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
 		"id": "q8",
 		"title": "",
 		"video_url": "",
@@ -175,16 +88,5 @@
 		"question": "Why is resizing often needed in machine learning training ?",
 		"possible answers": ["The smaller the better.", "Not to confuse the model with different sizes.", "For faster training.", "It actually is not needed to do that."],
 		"answer": ["Not to confuse the model with different sizes."]
-	},
-	{
-		"id": "s8",
-		"title": "References",
-		"image":"references.png"
-	},
-    {
-		"id": "s9",
-		"title": "Certification",
-		"image":"certificat.png",
-		"certif_ratio": 50
 	}
 ]

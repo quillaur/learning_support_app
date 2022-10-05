@@ -1,23 +1,5 @@
 [
 	{
-		"id": "s1",
-		"title": "",
-		"video_url": "",
-		"image":"course_img.png",
-		"text": "Let's learn how to classify images with Data Academy. We will go from simple algorithms great for solving simple classificiaton problems... all the way to deep learning. Enjoy !",
-		"question": ""
-	},
-    {
-		"id": "v1",
-		"title": "Introduction",
-		"video_url": "https://www.youtube.com/watch?v=S2z8dfpS4_4",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-	{
 		"id": "q1",
 		"title": "",
 		"video_url": "",
@@ -36,16 +18,6 @@
 		"question": "Computer vision is extensively used in healthcare.",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
-	},
-	{
-		"id": "v3",
-		"title": "Linear Classifiers for images",
-		"video_url": "https://www.youtube.com/watch?v=yCXykUpkXtY&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
 	},
 	{
 		"id": "q3",
@@ -67,16 +39,6 @@
 		"possible answers": ["64", "128", "4096", "No way to know..."],
 		"answer": ["4096"]
 	},
-    {
-		"id": "v2",
-		"title": "Image Classification with KNN",
-		"video_url": "https://www.youtube.com/watch?v=U2574G81de0&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=11",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
 	{
 		"id": "q4",
 		"title": "",
@@ -88,7 +50,7 @@
 		"answer": ["False"]
 	},
 	{
-		"id": "q4",
+		"id": "q15",
 		"title": "",
 		"video_url": "",
 		"image":"",
@@ -117,16 +79,6 @@
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
-    {
-		"id": "v8",
-		"title": "Convolutional Networks",
-		"video_url": "https://www.youtube.com/watch?v=S-a_cRN_v4M&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=20",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
 	{
 		"id": "q8",
 		"title": "",
@@ -136,16 +88,6 @@
 		"question": "Convolution kernels are used to...",
 		"possible answers": ["Extract features", "Extract colors", "Reduce dimensionality", "Classify pixels"],
 		"answer": ["Extract features"]
-	},
-    {
-		"id": "v9",
-		"title": "CNN Architectures",
-		"video_url": "https://www.youtube.com/watch?v=KCNDHMSdAr4&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=21",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
 	},
 	{
 		"id": "q10",
@@ -196,16 +138,5 @@
 		"question": "Based on your actual knowledge, select the best CNN for image classification.",
 		"possible answers": ["VGG16", "VGG19", "ResNet50", "SVC"],
 		"answer": ["ResNet50"]
-	},
-    {
-        "id": "s8",
-        "title": "References",
-        "image":"references.png"
-    },
-    {
-        "id": "s9",
-        "title": "Certification",
-        "image":"certificat.png",
-        "certif_ratio": 50
-    }
+	}
 ]

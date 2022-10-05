@@ -1,0 +1,52 @@
+{
+	"Introduction": {
+		"id": "s1",
+		"video_url": "",
+		"image":"course_img.png",
+		"text": "Hi there ! Let's see how your computer considers images and discover the basics concepts behind computer vision. I hope you'll enjoy the ride !"
+	},
+	"A digital image": {
+		"id": "v3",
+		"video_url": "https://www.youtube.com/watch?v=Z-YwkZwsyRE&list=PLAwxTw4SYaPn-unAWtRMleY4peSe4OzIY&index=71",
+        "video_source": "Udacity (youtube)",
+		"image":"",
+		"text": ""
+	},
+    "Pixel notions": {
+		"id": "v1",
+		"video_url": "https://www.youtube.com/watch?v=15aqFQQVBWU",
+        "video_source": "Code.org (youtube)",
+		"image":"",
+		"text": ""
+	},
+	"Image histogram": {
+		"id": "s2",
+		"title": "",
+		"video_url": "",
+		"image1":"q3.png",
+		"image":"s2.png",
+		"image2":"s4.png",
+		"image3":"s5.png",
+		"text": "The histogram of an image represent the number of pixels for each possible intensity (of the gray scale in this case).",
+		"text1": "On the following slide, you can see that the intensity distribution is shifted to the left of the histogram which gives a darker or under exposed image.",
+		"text2": "When you evenly distribute pixel intensities accross the possible range, you get a perfectly adjusted contrast. This is great to help the computer find interesting keypoints in your image !",
+		"text3": "You can also look at it with a cumulated sum of the intensity distribution. If you get a straight line accross this figure, it means your histogram (of the previous side) is well equalized.",
+		"question": "",
+		"possible answers": [],
+		"answer": []
+	},
+	"Convolution filtering": {
+		"id": "v4",
+		"video_url": "https://www.youtube.com/watch?v=FMbsAEjv_PQ",
+		"video_url1": "https://www.youtube.com/watch?v=WeNpd_YEF6I",
+        "video_source": "CSBrain (youtube)",
+		"video_source1": "Udacity (youtube)",
+		"image":"https://upload.wikimedia.org/wikipedia/commons/1/19/2D_Convolution_Animation.gif",
+		"source_image": "commons.wikimedia.org and en.wikipedia.org",
+		"text": "In image processing, a kernel, convolution matrix, or mask is a small matrix used for blurring, sharpening, embossing, edge detection, and more. This is accomplished by doing a convolution between the kernel and an image. The convolution filters use local neighbors to compute the weighted average, and each pixel is used multiple times by its neighbors. Whatch carefully the animation to understand what happens to an image uppon running a convolution filter on it."
+	},
+	"References": {
+		"id": "s8",
+		"image":"references.png"
+	}
+}

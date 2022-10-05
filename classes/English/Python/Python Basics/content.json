@@ -1,0 +1,72 @@
+{
+	"Introduction": {
+		"video_url": "",
+		"video_source": "",
+		"video_start": 0,
+		"image":"course_img.png",
+		"source_image": "",
+		"text": "Let's learn the basics of python ! Here you will learn about python variable types, conditional statements, data structures and loops. To do this, I will use various youtube channels, slides and interactive questions. Let's get started !"
+	},
+	"Hello world": {
+		"video_url": "https://www.youtube.com/watch?v=KOdfpbnWLVo&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=2",
+		"video_source": "Socratica (youtube)",
+		"video_start": 0,
+		"text": "Learn how to open python and print your first message with this animated video.",
+		"image":"",
+		"source_image": ""
+	},
+	"Variables": {
+		"video_url": "https://www.youtube.com/watch?v=OH86oLzVzzw",
+		"video_source": "DataCamp (youtube)",
+		"video_start": 0,
+		"text": "",
+		"image":"",
+		"source_image": ""
+	},
+	"Conditional statements": {
+		"video_url": "https://www.youtube.com/watch?v=f4KOjWS_KZs",
+		"video_source": "Socratica (youtube)",
+		"video_start": 0,
+		"text": "Note: it is now preferable to use input() instead of raw_input() in python 3.",
+		"image":"",
+		"source_image": ""
+	},
+	"Lists": {
+		"video_url": "https://www.youtube.com/watch?v=ohCDWZgNIU0&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=14",
+		"video_source": "Socratica (youtube)",
+		"video_start": 0,
+		"text": "",
+		"image":"",
+		"source_image": ""
+	},
+	"Dictionnaries": {
+		"video_url": "https://www.youtube.com/watch?v=XCcpzWs-CI4&list=PLi01XoE8jYohWFPpC17Z-wWhPOSuh8Er-&index=15",
+		"video_source": "Socratica (youtube)",
+		"video_start": 0,
+		"text": "Note: in a recent python update, dictionnaries keep track of the order in which you inserted keys.",
+		"image":"",
+		"source_image": ""
+	},
+	"Loops": {
+		"video_url": "https://www.youtube.com/watch?v=9ueMumuFv6g",
+		"video_source": "Programming with Mosh (youtube)",
+		"video_start": 0,
+		"text": "",
+		"image":"",
+		"source_image": ""
+	},
+	"Range loop": {
+		"video_url": "",
+		"video_source": "Programming with Mosh (youtube)",
+		"video_start": 0,
+		"text": "A very common loop to do is a range loop. It will create as many loop cycles as indicated in the range fonction. Here is an exemple:",
+		"image":"s6.png",
+		"text1": "Note: the number in the range parenthesis indicates the number of loop cycles that you want. Count the number of times the variable i was printed on the screen and you will see that it is exaclty what happened.",
+		"text2": "You also be more specific by indicating the start, the end and the step of the desired loop. Here is an exemple:",
+		"image1":"s7.png",
+		"source_image": ""
+	},
+	"References": {
+		"image":"references.png"
+	}
+}
