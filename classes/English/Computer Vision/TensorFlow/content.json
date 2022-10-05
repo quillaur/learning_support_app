@@ -1,180 +1,59 @@
-[
-	{
+{
+	"Tensorflow": {
 		"id": "s1",
-		"title": "",
 		"video_url": "",
 		"image":"course_img.png",
-		"text": "In this course, you will learn to use Tensorflow to solve computer vision problems. Enjoy !",
-		"question": ""
+		"text": "In this course, you will learn to use Tensorflow to solve computer vision problems. Enjoy !"
 	},
-    {
+	"Introduction": {
 		"id": "v1",
-		"title": "Introduction",
 		"video_url": "https://www.youtube.com/watch?v=tXVNS-V39A0",
         "video_source": "edureka! (youtube)",
 		"video_start": 0,
 		"image":"",
-		"text": "",
-		"question": ""
+		"text": ""
 	},
-	{
-		"id": "q1",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "TensorFlow is made and supported by Google.",
-		"possible answers": ["True", "False"],
-		"answer": ["True"]
-	},
-	{
-		"id": "q3",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "Who is using TensorFlow ?",
-		"possible answers": ["PayPal", "AirB&B", "Google", "Facebook"],
-		"answer": ["PayPal", "AirB&B", "Google"]
-	},
-	{
-		"id": "q2",
-		"title": "",
-		"video_url": "",
-		"image":"q2.png",
-		"text": "",
-		"question": "What is the dimension of this tensor ?",
-		"possible answers": ["[3,3,3]", "[3,4,5]", "[4,4,4]", "3-[4,4]"],
-		"answer": ["[4,4,4]"]
-	},
-	{
-		"id": "q4",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "Who are some of the competitors of TensorFlow ?",
-		"possible answers": ["PyTorch", "CNTK", "Keras", "Sklearn"],
-		"answer": ["PyTorch", "CNTK"]
-	},
-	{
+	"What's a tensor ?": {
 		"id": "v2",
-		"title": "What's a tensor ?",
 		"video_url": "https://www.youtube.com/watch?v=bpG3gqDM80w",
         "video_source": "The Science Asylum (youtube)",
 		"video_start": 0,
 		"image":"",
-		"text": "Let's go deeper into what is a mathematical tensor.",
-		"question": ""
+		"text": "Let's go deeper into what is a mathematical tensor."
 	},
-	{
+	"Load a Custom Dataset": {
 		"id": "s1",
-		"title": "Load a Custom Dataset",
 		"text": "To load a custom dataset from a local directory, you will want to use this object.",
 		"image":"s1.png",
 		"text1": "Follow this implementation exemple to use properly this function.",
-		"image1":"s1.1.png",
-		"question": ""
+		"image1":"s1.1.png"
 	},
-	{
+	"Data Augmentation": {
 		"id": "v5",
-		"title": "Data Augmentation",
 		"video_url": "https://www.youtube.com/watch?v=bEwqyjB4WhA",
         "video_source": "Trending Videos (youtube)",
 		"video_start": 0,
 		"image":"",
-		"text": "Another advantage of using such programming object is that it also properly put your augmented data in your training set and not in your validation sets.",
-		"question": ""
+		"text": "Another advantage of using such programming object is that it also properly put your augmented data in your training set and not in your validation sets."
 	},
-	{
-		"id": "q9",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "You must use data augmentation in an image classification problem.",
-		"possible answers": ["True", "False"],
-		"answer": ["False"]
-	},
-	{
-		"id": "q10",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "If you use data augmentation, you must prove that it had a positive impact on your model performances.",
-		"possible answers": ["True", "False"],
-		"answer": ["True"]
-	},
-	{
+	"Classifying images with TensorFlow": {
 		"id": "v3",
-		"title": "Classifying images with TensorFlow",
 		"video_url": "https://www.youtube.com/watch?v=bemDFpNooA8&list=PLQY2H8rRoyvwLbzbnKJ59NkZvQAW9wLbx&index=22",
         "video_source": "TensorFlow (youtube)",
 		"video_start": 0,
 		"image":"",
-		"text": "",
-		"question": ""
+		"text": ""
 	},
-	{
-		"id": "q5",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "To stack layers of your deep learning model with tensorflow, which API do you need to use ?",
-		"possible answers": ["Flatten", "Board", "Model", "Sequential"],
-		"answer": ["Sequential"]
-	},
-	{
-		"id": "q6",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "Which is the final step to fully build your newly designed model ?",
-		"possible answers": ["fit", "compile", "evaluate", "Model"],
-		"answer": ["compile"]
-	},
-	{
-		"id": "q7",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "To train your model with tensorflow, which method do you need to use ?",
-		"possible answers": ["fit", "compile", "evaluate", "Model"],
-		"answer": ["fit"]
-	},
-	{
+	"TensorBoard": {
 		"id": "v4",
-		"title": "TensorBoard",
 		"video_url": "https://www.youtube.com/watch?v=qEQ-_EId-D0",
         "video_source": "Google Cloud Tech (youtube)",
 		"video_start": 0,
 		"image":"",
-		"text": "To learn more about TensorBoard and how to launch it, go to tensorflow.org/tensorboard",
-		"question": ""
+		"text": "To learn more about TensorBoard and how to launch it, go to tensorflow.org/tensorboard"
 	},
-	{
-		"id": "q8",
-		"title": "",
-		"video_url": "",
-		"image":"",
-		"text": "",
-		"question": "What is TensorBoard primarily made for ?",
-		"possible answers": ["visualizing performances", "build ML model", "view TF documentation", "improve model performances"],
-		"answer": ["visualizing performances"]
-	},
-    {
+    "References": {
         "id": "s8",
-        "title": "References",
         "image":"references.png"
-    },
-    {
-        "id": "s9",
-        "title": "Certification",
-        "image":"certificat.png",
-        "certif_ratio": 50
     }
-]
+}

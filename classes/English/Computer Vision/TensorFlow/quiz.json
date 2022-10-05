@@ -1,0 +1,102 @@
+[
+	{
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "TensorFlow is made and supported by Google.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Who is using TensorFlow ?",
+		"possible answers": ["PayPal", "AirB&B", "Google", "Facebook"],
+		"answer": ["PayPal", "AirB&B", "Google"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"q2.png",
+		"text": "",
+		"question": "What is the dimension of this tensor ?",
+		"possible answers": ["[3,3,3]", "[3,4,5]", "[4,4,4]", "3-[4,4]"],
+		"answer": ["[4,4,4]"]
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Who are some of the competitors of TensorFlow ?",
+		"possible answers": ["PyTorch", "CNTK", "Keras", "Sklearn"],
+		"answer": ["PyTorch", "CNTK"]
+	},
+	{
+		"id": "q9",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "You must use data augmentation in an image classification problem.",
+		"possible answers": ["True", "False"],
+		"answer": ["False"]
+	},
+	{
+		"id": "q10",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "If you use data augmentation, you must prove that it had a positive impact on your model performances.",
+		"possible answers": ["True", "False"],
+		"answer": ["True"]
+	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "To stack layers of your deep learning model with tensorflow, which API do you need to use ?",
+		"possible answers": ["Flatten", "Board", "Model", "Sequential"],
+		"answer": ["Sequential"]
+	},
+	{
+		"id": "q6",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Which is the final step to fully build your newly designed model ?",
+		"possible answers": ["fit", "compile", "evaluate", "Model"],
+		"answer": ["compile"]
+	},
+	{
+		"id": "q7",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "To train your model with tensorflow, which method do you need to use ?",
+		"possible answers": ["fit", "compile", "evaluate", "Model"],
+		"answer": ["fit"]
+	},
+	{
+		"id": "q8",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "What is TensorBoard primarily made for ?",
+		"possible answers": ["visualizing performances", "build ML model", "view TF documentation", "improve model performances"],
+		"answer": ["visualizing performances"]
+	}
+]
