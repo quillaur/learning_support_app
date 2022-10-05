@@ -1,0 +1,92 @@
+[
+	{
+		"id": "q1",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "What is the function to read an image with OpenCV ?",
+		"possible answers": ["imshow", "imread", "imopen", "imdraw"],
+		"answer": ["imread"]
+	},
+	{
+		"id": "q2",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "How many pixels are in an image of shape (64, 64, 3) ?",
+		"possible answers": ["64", "128", "4096", "12288"],
+		"answer": ["4096"]
+	},
+	{
+		"id": "q3",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Select the function and the argument to use with OpenCV to convert an image from color to grayscale.",
+		"possible answers": ["cvtColor()", "imshow()", "imread()", "cv2.COLOR_BGR2GRAY", "cv2.COLOR_BGR2RGB", "cv2.COLOR_BGR2HSV"],
+		"answer": ["cvtColor()", "cv2.COLOR_BGR2GRAY"]
+	},
+	{
+		"id": "q4",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "What does HSV stands for ?",
+		"possible answers": ["High", "Hue", "Volume", "Value", "Saturation", "Surface"],
+		"answer": ["Hue", "Saturation", "Value"]
+	},
+	{
+		"id": "q5",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Which color space format is better for image area filtering ?",
+		"possible answers": ["RGB", "BGR", "Grayscale", "HSV"],
+		"answer": ["HSV"]
+	},
+	{
+		"id": "q6",
+		"title": "",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What is the fonction to apply a mask on an image based on a range of colors ?",
+		"possible answers": ["inRange()", "mask()", "applyRange()", "imRangeMask()"],
+		"answer": ["inRange()"]
+	},
+	{
+		"id": "q7",
+		"title": "",
+		"video_url": "",
+		"image":"q6.png",
+		"text": "",
+		"question": "What parameters do you need to pass to the inRange() function ?",
+		"possible answers": ["the image", "the low HSV value", "the RGB values", "the BGR values", "the high HSV value", "the aspect ratio"],
+		"answer": ["the image", "the low HSV value", "the high HSV value"]
+	},
+	{
+		"id": "q8",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "To select a subpart of an image, you need to...",
+		"possible answers": ["crop the image", "resize the image", "apply a filter", "conver to HSV"],
+		"answer": ["crop the image"]
+	},
+	{
+		"id": "q9",
+		"title": "",
+		"video_url": "",
+		"image":"",
+		"text": "",
+		"question": "Why is resizing often needed in machine learning training ?",
+		"possible answers": ["The smaller the better.", "Not to confuse the model with different sizes.", "For faster training.", "It actually is not needed to do that."],
+		"answer": ["Not to confuse the model with different sizes."]
+	}
+]
