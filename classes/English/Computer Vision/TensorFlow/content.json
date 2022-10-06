@@ -1,59 +1,70 @@
 {
-	"Tensorflow": {
-		"id": "s1",
-		"video_url": "",
-		"image":"course_img.png",
-		"text": "In this course, you will learn to use Tensorflow to solve computer vision problems. Enjoy !"
-	},
-	"Introduction": {
-		"id": "v1",
-		"video_url": "https://www.youtube.com/watch?v=tXVNS-V39A0",
-        "video_source": "edureka! (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-	"What's a tensor ?": {
-		"id": "v2",
-		"video_url": "https://www.youtube.com/watch?v=bpG3gqDM80w",
-        "video_source": "The Science Asylum (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "Let's go deeper into what is a mathematical tensor."
-	},
-	"Load a Custom Dataset": {
-		"id": "s1",
-		"text": "To load a custom dataset from a local directory, you will want to use this object.",
-		"image":"s1.png",
-		"text1": "Follow this implementation exemple to use properly this function.",
-		"image1":"s1.1.png"
-	},
-	"Data Augmentation": {
-		"id": "v5",
-		"video_url": "https://www.youtube.com/watch?v=bEwqyjB4WhA",
-        "video_source": "Trending Videos (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "Another advantage of using such programming object is that it also properly put your augmented data in your training set and not in your validation sets."
-	},
-	"Classifying images with TensorFlow": {
-		"id": "v3",
-		"video_url": "https://www.youtube.com/watch?v=bemDFpNooA8&list=PLQY2H8rRoyvwLbzbnKJ59NkZvQAW9wLbx&index=22",
-        "video_source": "TensorFlow (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-	"TensorBoard": {
-		"id": "v4",
-		"video_url": "https://www.youtube.com/watch?v=qEQ-_EId-D0",
-        "video_source": "Google Cloud Tech (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "To learn more about TensorBoard and how to launch it, go to tensorflow.org/tensorboard"
-	},
-    "References": {
-        "id": "s8",
-        "image":"references.png"
-    }
+	"Tensorflow": [
+		{
+			"image":"course_img.png"
+		},
+		{
+			"text": "In this course, you will learn to use Tensorflow to solve computer vision problems. Enjoy !"
+		}
+	],
+	"Introduction": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=tXVNS-V39A0",
+			"video_source": "edureka! (youtube)",
+			"video_start": 0
+		}
+	],
+	"What's a tensor ?": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=bpG3gqDM80w",
+			"video_source": "The Science Asylum (youtube)",
+			"video_start": 0
+		}
+	],
+	"Load a Custom Dataset": [
+		{
+			"text": "To load a custom dataset from a local directory, you will want to use this object."
+		},
+		{
+			"image":"s1.png"
+		},
+		{
+			"text": "Follow this implementation exemple to use properly this function."
+		},
+		{
+			"image":"s1.1.png"
+		}
+	],
+	"Data Augmentation": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=bEwqyjB4WhA",
+			"video_source": "Trending Videos (youtube)",
+			"video_start": 0
+		},
+		{
+			"text": "Another advantage of using such programming object is that it also properly put your augmented data in your training set and not in your validation sets."
+		}
+	],
+	"Classifying images with TensorFlow": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=bemDFpNooA8&list=PLQY2H8rRoyvwLbzbnKJ59NkZvQAW9wLbx&index=22",
+			"video_source": "TensorFlow (youtube)",
+			"video_start": 0
+		}
+	],
+	"TensorBoard": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=qEQ-_EId-D0",
+			"video_source": "Google Cloud Tech (youtube)",
+			"video_start": 0
+		},
+		{
+			"text": "To learn more about TensorBoard and how to launch it, go to tensorflow.org/tensorboard"
+		}
+	],
+    "References": [
+		{
+			"image":"references.png"
+    	}
+	]
 }

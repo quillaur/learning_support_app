@@ -1,52 +1,50 @@
 {
-	"Image Classification": {
-		"id": "s1",
-		"video_url": "",
-		"image":"course_img.png",
-		"text": "Let's learn how to classify images with Data Academy. We will go from simple algorithms great for solving simple classificiaton problems... all the way to deep learning. Enjoy !"
-	},
-    "Introduction": {
-		"id": "v1",
-		"video_url": "https://www.youtube.com/watch?v=S2z8dfpS4_4",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-	"Linear Classifiers for images": {
-		"id": "v3",
-		"video_url": "https://www.youtube.com/watch?v=yCXykUpkXtY&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-    "Image Classification with KNN": {
-		"id": "v2",
-		"video_url": "https://www.youtube.com/watch?v=U2574G81de0&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=11",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-    "Convolutional Networks": {
-		"id": "v8",
-		"video_url": "https://www.youtube.com/watch?v=S-a_cRN_v4M&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=20",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-    "CNN Architectures": {
-		"id": "v9",
-		"video_url": "https://www.youtube.com/watch?v=KCNDHMSdAr4&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=21",
-        "video_source": "Data Academy (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": ""
-	},
-    "References": {
-        "id": "s8",
-        "image":"references.png"
-    }
+	"Image Classification": [
+		{
+			"image":"course_img.png"
+		},
+		{
+			"text": "Let's learn how to classify images with Data Academy. We will go from simple algorithms great for solving simple classificiaton problems... all the way to deep learning. Enjoy !"
+		}
+	],
+    "Introduction": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=S2z8dfpS4_4",
+			"video_source": "Data Academy (youtube)",
+			"video_start": 0
+		}
+	],
+	"Linear Classifiers for images": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=yCXykUpkXtY&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=13",
+			"video_source": "Data Academy (youtube)",
+			"video_start": 0
+		}
+	],
+    "Image Classification with KNN": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=U2574G81de0&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=11",
+			"video_source": "Data Academy (youtube)",
+			"video_start": 0
+		}
+	],
+    "Convolutional Networks": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=S-a_cRN_v4M&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=20",
+			"video_source": "Data Academy (youtube)",
+			"video_start": 0
+		}
+	],
+    "CNN Architectures": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=KCNDHMSdAr4&list=PLsugXK9b1w1kRXvGQcIG_LG3OQtD_n6dW&index=21",
+			"video_source": "Data Academy (youtube)",
+			"video_start": 0
+		}
+	],
+    "References": [
+		{
+        	"image":"references.png"
+    	}
+	]
 }
