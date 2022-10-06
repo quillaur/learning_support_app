@@ -173,6 +173,20 @@ def set_certificat_view():
                         )
 
 
+def display_panel(this_panel: dict) -> None:
+    for k, v in this_panel.items():
+        if k == "text" or k == "video_source" or k == "source_image":
+            st.info(v)
+        elif k == "image":
+            if "https" in v:
+                st.image(v)
+            elif not "certificat" in v:
+                img = draw_image(v)
+                st.image(img)
+        
+        elif k == "video_url":
+            st.video(v, start_time=this_panel["video_start"])
+
 
 def set_main_view() -> None:
     """
@@ -202,41 +216,21 @@ def set_main_view() -> None:
             elif tab_title == "Certificat":
                 set_certificat_view()
             else:
-                this_page = st.session_state["content"][tab_title]
-                col1, col2 = st.columns([2,3], gap="large")
-                with col1:
-                    st.title(tab_title)
-                    # If there is a value for this element, 
-                    # it means the creator wants it to be on the page.
-                    for k, v in this_page.items():
-                        if v:                               
-                            # There can be several text keys.
-                            if k.startswith("text"):
-                                st.info(v)
-                            
-                            elif k == "video_source" or k == "source_image":
-                                st.info(f"Source: {v}")
-                            
-                
-                with col2:
-                    for k, v in this_page.items():
-                        if v:
-                            if k == "video_url":
-                                if "video_start" in this_page and this_page["video_start"]:
-                                    start_time = this_page["video_start"]
-                                else:
-                                    start_time = 0
+                this_tab = st.session_state["content"][tab_title]
 
-                                st.video(v, start_time=start_time)
-
-                            # There can be several image keys.
-                            elif k.startswith("image"):
-                                if "https" in v:
-                                    st.image(v)
-                                elif not "certificat" in v:
-                                    img = draw_image(v)
-                                    st.image(img)
-
-            # st.write("-----------------")
+                # Ordered in 2 columns
+                # 1 | 2
+                # 3 | 4
+                panel_number = len(this_tab)
+                if panel_number > 1:
+                    for i in range(0, panel_number, 2):
+                        col1, col2 = st.columns(2, gap="large")
+                        with col1:
+                            display_panel(this_tab[i])
+                        with col2:
+                            if i+1 < panel_number:
+                                display_panel(this_tab[i+1])
+                else:
+                    display_panel(this_tab[0])
 
                             

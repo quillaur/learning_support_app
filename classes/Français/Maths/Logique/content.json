@@ -1,67 +1,72 @@
 {
-	"Introduction": {
-		"id": "s0",
-		"video_url": "",
-		"image":"course_img.png",
-		"text": "Vous apprendrez ici à utiliser des éléments de logique mathématique afin de pouvoir suivre au mieux des opérations booléennes dans des programmes informatiques. Enjoy !",
-		"question": ""
-	},
-    "Les booléens": {
-		"id": "v1",
-		"video_url": "https://www.youtube.com/watch?v=Gp1zryfkHjs",
-        "video_source": "fadagogo.com-codage (youtube)",
-		"video_start": 15,
-		"image":"s3.png",
-		"text": "En informatiques on parle de booléens, alors qu'en mathématiques, on parle de propositions.",
-		"question": ""
-	},
-	"Les propositions": {
-		"id": "s2",
-		"video_url": "",
-		"image":"s2.png",
-		"text": ""
-	},
-	"Les connecteurs": {
-		"id": "s1",
-		"video_url": "",
-		"image":"s1.png",
-		"text": "Définition: le connecteur et est donc un opérateur binaire qui lie deux propositions pour en faire une autre.",
-		"text0": "Soit la proposition A : « la carte est un as »",
-		"text1": "Soit la proposition P : « la carte est un pique »",
-		"text2": "A V P : « la carte est un as et la carte est un pique »",
-		"text3": "A ⋀ P : « la carte est un as ou un pique »"
-	},
-	"Les tables de vérités": {
-		"id": "s4",
-		"video_url": "",
-		"image":"s4.png",
-		"text": "Définition: Une table de vérité est utilisée pour représenter de manière sémantique des expressions logiques et calculer la valeur de leur fonction relativement à chacun de leurs arguments fonctionnels (chaque combinaison de valeur assumée par leurs variables logiques).",
-		"text0": "Soit la proposition P : « la carte est un as »",
-		"text1": "Soit la proposition Q : « la carte est un pique »"
-	},
-	"Les prositions complexes": {
-		"id": "s5",
-		"video_url": "",
-		"image":"s5.png",
-		"text": ""
-	},
-	"Les prositions équivalentes": {
-		"id": "s6",
-		"video_url": "",
-		"image":"s6.png",
-		"text": "Deux propositions sont dites équivalentes lorsque leurs tables de vérités sont identiques."
-	},
-	"Les implications": {
-		"id": "v2",
-		"video_url": "https://www.youtube.com/watch?v=WdCKVssbtdU",
-        "video_source": "Les Bons Profs SUP (youtube)",
-		"video_start": 0,
-		"image":"",
-		"text": "",
-		"question": ""
-	},
-    "Références": {
-        "id": "s8",
-        "image":"references.png"
-    }
+	"Introduction": [
+		{
+			"image":"course_img.png"
+		},
+		{
+			"text": "Vous apprendrez ici à utiliser des éléments de logique mathématique afin de pouvoir suivre au mieux des opérations booléennes dans des programmes informatiques. Enjoy !"
+		}
+	],
+    "Les booléens": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=Gp1zryfkHjs",
+			"video_source": "fadagogo.com-codage (youtube)",
+			"video_start": 15
+		},
+		{
+			"image":"s3.png"
+		},
+		{
+			"text": "En informatiques on parle de booléens, alors qu'en mathématiques, on parle de propositions."
+		}
+	],
+	"Les propositions": [
+		{
+			"image":"s2.png"
+		}
+	],
+	"Les connecteurs": [
+		{
+			"text": "Définition: le connecteur est un opérateur binaire qui lie deux propositions pour en faire une autre."
+		},
+		{
+			"image":"s1.png"
+		},
+		{
+			"image": "exemple_connecteur.png"
+		}
+	],
+	"Les tables de vérités": [
+		{
+			"text": "Définition: Une table de vérité est utilisée pour représenter de manière sémantique des expressions logiques et calculer la valeur de leur fonction relativement à chacun de leurs arguments fonctionnels (chaque combinaison de valeur assumée par leurs variables logiques)."
+		},
+		{
+			"image":"s4.png"
+		}
+	],
+	"Les prositions complexes": [
+		{
+			"image":"s5.png"
+		}
+	],
+	"Les prositions équivalentes": [
+		{
+			"image":"s6.png"
+		},
+		{
+			"text": "Deux propositions sont dites équivalentes lorsque leurs tables de vérités sont identiques."
+		}
+	],
+	"Les implications": [
+		{
+			"video_url": "https://www.youtube.com/watch?v=WdCKVssbtdU",
+			"video_source": "Les Bons Profs SUP (youtube)",
+			"video_start": 0
+		}
+	],
+    "Références": [
+		{
+        	"image":"references.png"
+    	}
+	]
 }
