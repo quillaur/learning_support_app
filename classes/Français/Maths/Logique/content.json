@@ -27,13 +27,7 @@
 	],
 	"Les connecteurs": [
 		{
-			"text": "Définition: le connecteur est un opérateur binaire qui lie deux propositions pour en faire une autre."
-		},
-		{
 			"image":"s1.png"
-		},
-		{
-			"image": "exemple_connecteur.png"
 		}
 	],
 	"Les tables de vérités": [
@@ -51,10 +45,7 @@
 	],
 	"Les prositions équivalentes": [
 		{
-			"image":"s6.png"
-		},
-		{
-			"text": "Deux propositions sont dites équivalentes lorsque leurs tables de vérités sont identiques."
+			"image":"propositions_equivalentes.png"
 		}
 	],
 	"Les implications": [
