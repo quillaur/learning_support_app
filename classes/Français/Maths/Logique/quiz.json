@@ -14,8 +14,8 @@
 		"title": "Question 2",
 		"video_url": "",
 		"image":"",
-		"text": "",
-		"question": "p: 5 > 2",
+		"text": "p: 5 > 2",
+		"question": "la proposition p est-elle vraie ou fausse ?",
 		"possible answers": ["True", "False"],
 		"answer": ["True"]
 	},
@@ -24,8 +24,8 @@
 		"title": "Question 3",
 		"video_url": "",
 		"image":"",
-		"text": "",
-		"question": "q: 5 == 2",
+		"text": "q: 5 == 2",
+		"question": "la proposition q est-elle vraie ou fausse ?",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
@@ -34,8 +34,8 @@
 		"title": "Question 4",
 		"video_url": "",
 		"image":"",
-		"text": "",
-		"question": "r: x > 2 est une proposition.",
+		"text": "r: x + 2",
+		"question": "r est une proposition.",
 		"possible answers": ["True", "False"],
 		"answer": ["False"]
 	},
