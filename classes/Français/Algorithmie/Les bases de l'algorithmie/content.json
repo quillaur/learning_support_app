@@ -1,0 +1,45 @@
+{
+	"Introduction": [
+		{
+			"image":"intro.png"
+		},
+		{
+			"image": "definition.png"
+		}
+	],
+    "Les variables": [
+		{
+			"image":"variables.png"
+		}
+	],
+    "Les conditions": [
+		{
+			"image":"conditions.png"
+		}
+	],
+    "La boucle for": [
+		{
+			"image":"for.png"
+		}
+	],
+    "La liste": [
+		{
+			"image":"liste.png"
+		}
+	],
+    "La boucle while": [
+		{
+			"image":"while.png"
+		}
+	],
+    "Les fonctions": [
+		{
+			"image":"fonctions.png"
+		}
+	],
+    "Références": [
+		{
+        	"image":"references.png"
+    	}
+	]
+}
