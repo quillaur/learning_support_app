@@ -55,6 +55,17 @@
 			"video_start": 0
 		}
 	],
+	"Les lois logiques": [
+		{
+			"image":"réciproque.png"
+		},
+		{
+			"image":"contraposée.png"
+		},
+		{
+			"image":"absurde.png"
+		}
+	],
     "Références": [
 		{
         	"image":"references.png"
